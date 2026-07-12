@@ -302,12 +302,18 @@ Nested data_factory_linked_service_azure_blob_storages (azurerm_data_factory_lin
         - additional_properties
         - annotations
         - connection_string
+        - connection_string_key_vault_id (alternative to connection_string - read from Key Vault instead)
+        - connection_string_key_vault_secret_name (alternative to connection_string - read from Key Vault instead)
         - connection_string_insecure
         - description
         - integration_runtime_name
         - parameters
         - sas_uri
+        - sas_uri_key_vault_id (alternative to sas_uri - read from Key Vault instead)
+        - sas_uri_key_vault_secret_name (alternative to sas_uri - read from Key Vault instead)
         - service_endpoint
+        - service_endpoint_key_vault_id (alternative to service_endpoint - read from Key Vault instead)
+        - service_endpoint_key_vault_secret_name (alternative to service_endpoint - read from Key Vault instead)
         - service_principal_id
         - service_principal_key
         - storage_kind
@@ -322,6 +328,8 @@ Nested data_factory_linked_service_azure_databrickses (azurerm_data_factory_link
         - name
     Optional:
         - access_token
+        - access_token_key_vault_id (alternative to access_token - read from Key Vault instead)
+        - access_token_key_vault_secret_name (alternative to access_token - read from Key Vault instead)
         - additional_properties
         - annotations
         - description
@@ -336,6 +344,8 @@ Nested data_factory_linked_service_azure_databrickses (azurerm_data_factory_link
 Nested data_factory_linked_service_azure_file_storages (azurerm_data_factory_linked_service_azure_file_storage):
     Required:
         - connection_string
+        - connection_string_key_vault_id (alternative to connection_string - read from Key Vault instead)
+        - connection_string_key_vault_secret_name (alternative to connection_string - read from Key Vault instead)
         - name
     Optional:
         - additional_properties
@@ -346,6 +356,8 @@ Nested data_factory_linked_service_azure_file_storages (azurerm_data_factory_lin
         - integration_runtime_name
         - parameters
         - password
+        - password_key_vault_id (alternative to password - read from Key Vault instead)
+        - password_key_vault_secret_name (alternative to password - read from Key Vault instead)
         - user_id
         - key_vault_password (block)
 Nested data_factory_linked_service_azure_functions (azurerm_data_factory_linked_service_azure_function):
@@ -358,6 +370,8 @@ Nested data_factory_linked_service_azure_functions (azurerm_data_factory_linked_
         - description
         - integration_runtime_name
         - key
+        - key_key_vault_id (alternative to key - read from Key Vault instead)
+        - key_key_vault_secret_name (alternative to key - read from Key Vault instead)
         - parameters
         - key_vault_key (block)
 Nested data_factory_linked_service_azure_searches (azurerm_data_factory_linked_service_azure_search):
@@ -391,6 +405,8 @@ Nested data_factory_linked_service_azure_sql_databases (azurerm_data_factory_lin
 Nested data_factory_linked_service_azure_table_storages (azurerm_data_factory_linked_service_azure_table_storage):
     Required:
         - connection_string
+        - connection_string_key_vault_id (alternative to connection_string - read from Key Vault instead)
+        - connection_string_key_vault_secret_name (alternative to connection_string - read from Key Vault instead)
         - name
     Optional:
         - additional_properties
@@ -404,9 +420,13 @@ Nested data_factory_linked_service_cosmosdbs (azurerm_data_factory_linked_servic
     Optional:
         - account_endpoint
         - account_key
+        - account_key_key_vault_id (alternative to account_key - read from Key Vault instead)
+        - account_key_key_vault_secret_name (alternative to account_key - read from Key Vault instead)
         - additional_properties
         - annotations
         - connection_string
+        - connection_string_key_vault_id (alternative to connection_string - read from Key Vault instead)
+        - connection_string_key_vault_secret_name (alternative to connection_string - read from Key Vault instead)
         - database
         - description
         - integration_runtime_name
@@ -418,6 +438,8 @@ Nested data_factory_linked_service_cosmosdb_mongoapis (azurerm_data_factory_link
         - additional_properties
         - annotations
         - connection_string
+        - connection_string_key_vault_id (alternative to connection_string - read from Key Vault instead)
+        - connection_string_key_vault_secret_name (alternative to connection_string - read from Key Vault instead)
         - database
         - description
         - integration_runtime_name
@@ -435,7 +457,11 @@ Nested data_factory_linked_service_data_lake_storage_gen2s (azurerm_data_factory
         - parameters
         - service_principal_id
         - service_principal_key
+        - service_principal_key_key_vault_id (alternative to service_principal_key - read from Key Vault instead)
+        - service_principal_key_key_vault_secret_name (alternative to service_principal_key - read from Key Vault instead)
         - storage_account_key
+        - storage_account_key_key_vault_id (alternative to storage_account_key - read from Key Vault instead)
+        - storage_account_key_key_vault_secret_name (alternative to storage_account_key - read from Key Vault instead)
         - tenant
         - use_managed_identity
 Nested data_factory_linked_service_key_vaults (azurerm_data_factory_linked_service_key_vault):
@@ -461,6 +487,8 @@ Nested data_factory_linked_service_kustos (azurerm_data_factory_linked_service_k
         - parameters
         - service_principal_id
         - service_principal_key
+        - service_principal_key_key_vault_id (alternative to service_principal_key - read from Key Vault instead)
+        - service_principal_key_key_vault_secret_name (alternative to service_principal_key - read from Key Vault instead)
         - tenant
         - use_managed_identity
 Nested data_factory_linked_service_mysqls (azurerm_data_factory_linked_service_mysql):
@@ -521,8 +549,14 @@ Nested data_factory_linked_service_sftps (azurerm_data_factory_linked_service_sf
         - integration_runtime_name
         - parameters
         - password
+        - password_key_vault_id (alternative to password - read from Key Vault instead)
+        - password_key_vault_secret_name (alternative to password - read from Key Vault instead)
         - private_key_content_base64
+        - private_key_content_base64_key_vault_id (alternative to private_key_content_base64 - read from Key Vault instead)
+        - private_key_content_base64_key_vault_secret_name (alternative to private_key_content_base64 - read from Key Vault instead)
         - private_key_passphrase
+        - private_key_passphrase_key_vault_id (alternative to private_key_passphrase - read from Key Vault instead)
+        - private_key_passphrase_key_vault_secret_name (alternative to private_key_passphrase - read from Key Vault instead)
         - private_key_path
         - skip_host_key_validation
         - key_vault_password (block)
@@ -545,11 +579,15 @@ Nested data_factory_linked_service_sql_managed_instances (azurerm_data_factory_l
     Optional:
         - annotations
         - connection_string
+        - connection_string_key_vault_id (alternative to connection_string - read from Key Vault instead)
+        - connection_string_key_vault_secret_name (alternative to connection_string - read from Key Vault instead)
         - description
         - integration_runtime_name
         - parameters
         - service_principal_id
         - service_principal_key
+        - service_principal_key_key_vault_id (alternative to service_principal_key - read from Key Vault instead)
+        - service_principal_key_key_vault_secret_name (alternative to service_principal_key - read from Key Vault instead)
         - tenant
         - key_vault_connection_string (block)
         - key_vault_password (block)
@@ -589,6 +627,8 @@ Nested data_factory_linked_service_webs (azurerm_data_factory_linked_service_web
         - integration_runtime_name
         - parameters
         - password
+        - password_key_vault_id (alternative to password - read from Key Vault instead)
+        - password_key_vault_secret_name (alternative to password - read from Key Vault instead)
         - username
 Nested data_factory_managed_private_endpoints (azurerm_data_factory_managed_private_endpoint):
     Required:
@@ -1279,21 +1319,27 @@ EOT
       }))
     })))
     data_factory_linked_service_azure_blob_storages = optional(map(object({
-      name                       = string
-      additional_properties      = optional(map(string))
-      annotations                = optional(list(string))
-      connection_string          = optional(string)
-      connection_string_insecure = optional(string)
-      description                = optional(string)
-      integration_runtime_name   = optional(string)
-      parameters                 = optional(map(string))
-      sas_uri                    = optional(string)
-      service_endpoint           = optional(string)
-      service_principal_id       = optional(string)
-      service_principal_key      = optional(string)
-      storage_kind               = optional(string)
-      tenant_id                  = optional(string)
-      use_managed_identity       = optional(bool) # Default: false
+      name                                    = string
+      additional_properties                   = optional(map(string))
+      annotations                             = optional(list(string))
+      connection_string                       = optional(string)
+      connection_string_key_vault_id          = optional(string)
+      connection_string_key_vault_secret_name = optional(string)
+      connection_string_insecure              = optional(string)
+      description                             = optional(string)
+      integration_runtime_name                = optional(string)
+      parameters                              = optional(map(string))
+      sas_uri                                 = optional(string)
+      sas_uri_key_vault_id                    = optional(string)
+      sas_uri_key_vault_secret_name           = optional(string)
+      service_endpoint                        = optional(string)
+      service_endpoint_key_vault_id           = optional(string)
+      service_endpoint_key_vault_secret_name  = optional(string)
+      service_principal_id                    = optional(string)
+      service_principal_key                   = optional(string)
+      storage_kind                            = optional(string)
+      tenant_id                               = optional(string)
+      use_managed_identity                    = optional(bool) # Default: false
       key_vault_sas_token = optional(object({
         linked_service_name = string
         secret_name         = string
@@ -1308,17 +1354,19 @@ EOT
       }))
     })))
     data_factory_linked_service_azure_databrickses = optional(map(object({
-      adb_domain                 = string
-      name                       = string
-      access_token               = optional(string)
-      additional_properties      = optional(map(string))
-      annotations                = optional(list(string))
-      description                = optional(string)
-      existing_cluster_id        = optional(string)
-      integration_runtime_name   = optional(string)
-      msi_work_space_resource_id = optional(string)
-      msi_workspace_id           = optional(string)
-      parameters                 = optional(map(string))
+      adb_domain                         = string
+      name                               = string
+      access_token                       = optional(string)
+      access_token_key_vault_id          = optional(string)
+      access_token_key_vault_secret_name = optional(string)
+      additional_properties              = optional(map(string))
+      annotations                        = optional(list(string))
+      description                        = optional(string)
+      existing_cluster_id                = optional(string)
+      integration_runtime_name           = optional(string)
+      msi_work_space_resource_id         = optional(string)
+      msi_workspace_id                   = optional(string)
+      parameters                         = optional(map(string))
       instance_pool = optional(object({
         cluster_version       = string
         instance_pool_id      = string
@@ -1343,31 +1391,37 @@ EOT
       }))
     })))
     data_factory_linked_service_azure_file_storages = optional(map(object({
-      connection_string        = string
-      name                     = string
-      additional_properties    = optional(map(string))
-      annotations              = optional(list(string))
-      description              = optional(string)
-      file_share               = optional(string)
-      host                     = optional(string)
-      integration_runtime_name = optional(string)
-      parameters               = optional(map(string))
-      password                 = optional(string)
-      user_id                  = optional(string)
+      connection_string                       = string
+      connection_string_key_vault_id          = optional(string)
+      connection_string_key_vault_secret_name = optional(string)
+      name                                    = string
+      additional_properties                   = optional(map(string))
+      annotations                             = optional(list(string))
+      description                             = optional(string)
+      file_share                              = optional(string)
+      host                                    = optional(string)
+      integration_runtime_name                = optional(string)
+      parameters                              = optional(map(string))
+      password                                = optional(string)
+      password_key_vault_id                   = optional(string)
+      password_key_vault_secret_name          = optional(string)
+      user_id                                 = optional(string)
       key_vault_password = optional(object({
         linked_service_name = string
         secret_name         = string
       }))
     })))
     data_factory_linked_service_azure_functions = optional(map(object({
-      name                     = string
-      url                      = string
-      additional_properties    = optional(map(string))
-      annotations              = optional(list(string))
-      description              = optional(string)
-      integration_runtime_name = optional(string)
-      key                      = optional(string)
-      parameters               = optional(map(string))
+      name                      = string
+      url                       = string
+      additional_properties     = optional(map(string))
+      annotations               = optional(list(string))
+      description               = optional(string)
+      integration_runtime_name  = optional(string)
+      key                       = optional(string)
+      key_key_vault_id          = optional(string)
+      key_key_vault_secret_name = optional(string)
+      parameters                = optional(map(string))
       key_vault_key = optional(object({
         linked_service_name = string
         secret_name         = string
@@ -1406,50 +1460,62 @@ EOT
       }))
     })))
     data_factory_linked_service_azure_table_storages = optional(map(object({
-      connection_string        = string
-      name                     = string
-      additional_properties    = optional(map(string))
-      annotations              = optional(list(string))
-      description              = optional(string)
-      integration_runtime_name = optional(string)
-      parameters               = optional(map(string))
+      connection_string                       = string
+      connection_string_key_vault_id          = optional(string)
+      connection_string_key_vault_secret_name = optional(string)
+      name                                    = string
+      additional_properties                   = optional(map(string))
+      annotations                             = optional(list(string))
+      description                             = optional(string)
+      integration_runtime_name                = optional(string)
+      parameters                              = optional(map(string))
     })))
     data_factory_linked_service_cosmosdbs = optional(map(object({
-      name                     = string
-      account_endpoint         = optional(string)
-      account_key              = optional(string)
-      additional_properties    = optional(map(string))
-      annotations              = optional(list(string))
-      connection_string        = optional(string)
-      database                 = optional(string)
-      description              = optional(string)
-      integration_runtime_name = optional(string)
-      parameters               = optional(map(string))
+      name                                    = string
+      account_endpoint                        = optional(string)
+      account_key                             = optional(string)
+      account_key_key_vault_id                = optional(string)
+      account_key_key_vault_secret_name       = optional(string)
+      additional_properties                   = optional(map(string))
+      annotations                             = optional(list(string))
+      connection_string                       = optional(string)
+      connection_string_key_vault_id          = optional(string)
+      connection_string_key_vault_secret_name = optional(string)
+      database                                = optional(string)
+      description                             = optional(string)
+      integration_runtime_name                = optional(string)
+      parameters                              = optional(map(string))
     })))
     data_factory_linked_service_cosmosdb_mongoapis = optional(map(object({
-      name                           = string
-      additional_properties          = optional(map(string))
-      annotations                    = optional(list(string))
-      connection_string              = optional(string)
-      database                       = optional(string)
-      description                    = optional(string)
-      integration_runtime_name       = optional(string)
-      parameters                     = optional(map(string))
-      server_version_is_32_or_higher = optional(bool) # Default: false
+      name                                    = string
+      additional_properties                   = optional(map(string))
+      annotations                             = optional(list(string))
+      connection_string                       = optional(string)
+      connection_string_key_vault_id          = optional(string)
+      connection_string_key_vault_secret_name = optional(string)
+      database                                = optional(string)
+      description                             = optional(string)
+      integration_runtime_name                = optional(string)
+      parameters                              = optional(map(string))
+      server_version_is_32_or_higher          = optional(bool) # Default: false
     })))
     data_factory_linked_service_data_lake_storage_gen2s = optional(map(object({
-      name                     = string
-      url                      = string
-      additional_properties    = optional(map(string))
-      annotations              = optional(list(string))
-      description              = optional(string)
-      integration_runtime_name = optional(string)
-      parameters               = optional(map(string))
-      service_principal_id     = optional(string)
-      service_principal_key    = optional(string)
-      storage_account_key      = optional(string)
-      tenant                   = optional(string)
-      use_managed_identity     = optional(bool) # Default: false
+      name                                        = string
+      url                                         = string
+      additional_properties                       = optional(map(string))
+      annotations                                 = optional(list(string))
+      description                                 = optional(string)
+      integration_runtime_name                    = optional(string)
+      parameters                                  = optional(map(string))
+      service_principal_id                        = optional(string)
+      service_principal_key                       = optional(string)
+      service_principal_key_key_vault_id          = optional(string)
+      service_principal_key_key_vault_secret_name = optional(string)
+      storage_account_key                         = optional(string)
+      storage_account_key_key_vault_id            = optional(string)
+      storage_account_key_key_vault_secret_name   = optional(string)
+      tenant                                      = optional(string)
+      use_managed_identity                        = optional(bool) # Default: false
     })))
     data_factory_linked_service_key_vaults = optional(map(object({
       key_vault_id             = string
@@ -1461,18 +1527,20 @@ EOT
       parameters               = optional(map(string))
     })))
     data_factory_linked_service_kustos = optional(map(object({
-      kusto_database_name      = string
-      kusto_endpoint           = string
-      name                     = string
-      additional_properties    = optional(map(string))
-      annotations              = optional(list(string))
-      description              = optional(string)
-      integration_runtime_name = optional(string)
-      parameters               = optional(map(string))
-      service_principal_id     = optional(string)
-      service_principal_key    = optional(string)
-      tenant                   = optional(string)
-      use_managed_identity     = optional(bool) # Default: false
+      kusto_database_name                         = string
+      kusto_endpoint                              = string
+      name                                        = string
+      additional_properties                       = optional(map(string))
+      annotations                                 = optional(list(string))
+      description                                 = optional(string)
+      integration_runtime_name                    = optional(string)
+      parameters                                  = optional(map(string))
+      service_principal_id                        = optional(string)
+      service_principal_key                       = optional(string)
+      service_principal_key_key_vault_id          = optional(string)
+      service_principal_key_key_vault_secret_name = optional(string)
+      tenant                                      = optional(string)
+      use_managed_identity                        = optional(bool) # Default: false
     })))
     data_factory_linked_service_mysqls = optional(map(object({
       connection_string        = string
@@ -1520,22 +1588,28 @@ EOT
       parameters               = optional(map(string))
     })))
     data_factory_linked_service_sftps = optional(map(object({
-      authentication_type        = string
-      host                       = string
-      name                       = string
-      port                       = number
-      username                   = string
-      additional_properties      = optional(map(string))
-      annotations                = optional(list(string))
-      description                = optional(string)
-      host_key_fingerprint       = optional(string)
-      integration_runtime_name   = optional(string)
-      parameters                 = optional(map(string))
-      password                   = optional(string)
-      private_key_content_base64 = optional(string)
-      private_key_passphrase     = optional(string)
-      private_key_path           = optional(string)
-      skip_host_key_validation   = optional(bool)
+      authentication_type                              = string
+      host                                             = string
+      name                                             = string
+      port                                             = number
+      username                                         = string
+      additional_properties                            = optional(map(string))
+      annotations                                      = optional(list(string))
+      description                                      = optional(string)
+      host_key_fingerprint                             = optional(string)
+      integration_runtime_name                         = optional(string)
+      parameters                                       = optional(map(string))
+      password                                         = optional(string)
+      password_key_vault_id                            = optional(string)
+      password_key_vault_secret_name                   = optional(string)
+      private_key_content_base64                       = optional(string)
+      private_key_content_base64_key_vault_id          = optional(string)
+      private_key_content_base64_key_vault_secret_name = optional(string)
+      private_key_passphrase                           = optional(string)
+      private_key_passphrase_key_vault_id              = optional(string)
+      private_key_passphrase_key_vault_secret_name     = optional(string)
+      private_key_path                                 = optional(string)
+      skip_host_key_validation                         = optional(bool)
       key_vault_password = optional(list(object({
         linked_service_name = string
         secret_name         = string
@@ -1563,15 +1637,19 @@ EOT
       }))
     })))
     data_factory_linked_service_sql_managed_instances = optional(map(object({
-      name                     = string
-      annotations              = optional(list(string))
-      connection_string        = optional(string)
-      description              = optional(string)
-      integration_runtime_name = optional(string)
-      parameters               = optional(map(string))
-      service_principal_id     = optional(string)
-      service_principal_key    = optional(string)
-      tenant                   = optional(string)
+      name                                        = string
+      annotations                                 = optional(list(string))
+      connection_string                           = optional(string)
+      connection_string_key_vault_id              = optional(string)
+      connection_string_key_vault_secret_name     = optional(string)
+      description                                 = optional(string)
+      integration_runtime_name                    = optional(string)
+      parameters                                  = optional(map(string))
+      service_principal_id                        = optional(string)
+      service_principal_key                       = optional(string)
+      service_principal_key_key_vault_id          = optional(string)
+      service_principal_key_key_vault_secret_name = optional(string)
+      tenant                                      = optional(string)
       key_vault_connection_string = optional(object({
         linked_service_name = string
         secret_name         = string
@@ -1613,16 +1691,18 @@ EOT
       }))
     })))
     data_factory_linked_service_webs = optional(map(object({
-      authentication_type      = string
-      name                     = string
-      url                      = string
-      additional_properties    = optional(map(string))
-      annotations              = optional(list(string))
-      description              = optional(string)
-      integration_runtime_name = optional(string)
-      parameters               = optional(map(string))
-      password                 = optional(string)
-      username                 = optional(string)
+      authentication_type            = string
+      name                           = string
+      url                            = string
+      additional_properties          = optional(map(string))
+      annotations                    = optional(list(string))
+      description                    = optional(string)
+      integration_runtime_name       = optional(string)
+      parameters                     = optional(map(string))
+      password                       = optional(string)
+      password_key_vault_id          = optional(string)
+      password_key_vault_secret_name = optional(string)
+      username                       = optional(string)
     })))
     data_factory_managed_private_endpoints = optional(map(object({
       name               = string
