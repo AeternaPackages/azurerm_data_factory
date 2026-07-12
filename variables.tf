@@ -689,11 +689,11 @@ EOT
       repository_name    = string
       root_folder        = string
     }))
-    global_parameter = optional(object({
+    global_parameter = optional(list(object({
       name  = string
       type  = string
       value = string
-    }))
+    })))
     identity = optional(object({
       identity_ids = optional(set(string))
       type         = string
@@ -751,7 +751,7 @@ EOT
       folder       = optional(string)
       script       = optional(string)
       script_lines = optional(list(string))
-      sink = object({
+      sink = list(object({
         dataset = optional(object({
           name       = string
           parameters = optional(map(string))
@@ -775,49 +775,49 @@ EOT
           name       = string
           parameters = optional(map(string))
         }))
-      })
-      source = object({
-        dataset = optional(object({
-          name       = string
-          parameters = optional(map(string))
-        }))
-        description = optional(string)
-        flowlet = optional(object({
-          dataset_parameters = optional(string)
-          name               = string
-          parameters         = optional(map(string))
-        }))
-        linked_service = optional(object({
-          name       = string
-          parameters = optional(map(string))
-        }))
-        name = string
-        rejected_linked_service = optional(object({
-          name       = string
-          parameters = optional(map(string))
-        }))
-        schema_linked_service = optional(object({
-          name       = string
-          parameters = optional(map(string))
-        }))
-      })
-      transformation = optional(object({
-        dataset = optional(object({
-          name       = string
-          parameters = optional(map(string))
-        }))
-        description = optional(string)
-        flowlet = optional(object({
-          dataset_parameters = optional(string)
-          name               = string
-          parameters         = optional(map(string))
-        }))
-        linked_service = optional(object({
-          name       = string
-          parameters = optional(map(string))
-        }))
-        name = string
       }))
+      source = list(object({
+        dataset = optional(object({
+          name       = string
+          parameters = optional(map(string))
+        }))
+        description = optional(string)
+        flowlet = optional(object({
+          dataset_parameters = optional(string)
+          name               = string
+          parameters         = optional(map(string))
+        }))
+        linked_service = optional(object({
+          name       = string
+          parameters = optional(map(string))
+        }))
+        name = string
+        rejected_linked_service = optional(object({
+          name       = string
+          parameters = optional(map(string))
+        }))
+        schema_linked_service = optional(object({
+          name       = string
+          parameters = optional(map(string))
+        }))
+      }))
+      transformation = optional(list(object({
+        dataset = optional(object({
+          name       = string
+          parameters = optional(map(string))
+        }))
+        description = optional(string)
+        flowlet = optional(object({
+          dataset_parameters = optional(string)
+          name               = string
+          parameters         = optional(map(string))
+        }))
+        linked_service = optional(object({
+          name       = string
+          parameters = optional(map(string))
+        }))
+        name = string
+      })))
     })))
     data_factory_dataset_azure_blobs = optional(map(object({
       linked_service_name      = string
@@ -831,11 +831,11 @@ EOT
       folder                   = optional(string)
       parameters               = optional(map(string))
       path                     = optional(string)
-      schema_column = optional(object({
+      schema_column = optional(list(object({
         description = optional(string)
         name        = string
         type        = optional(string)
-      }))
+      })))
     })))
     data_factory_dataset_azure_sql_tables = optional(map(object({
       linked_service_id     = string
@@ -847,11 +847,11 @@ EOT
       parameters            = optional(map(string))
       schema                = optional(string)
       table                 = optional(string)
-      schema_column = optional(object({
+      schema_column = optional(list(object({
         description = optional(string)
         name        = string
         type        = optional(string)
-      }))
+      })))
     })))
     data_factory_dataset_binaries = optional(map(object({
       linked_service_name   = string
@@ -896,11 +896,11 @@ EOT
       description           = optional(string)
       folder                = optional(string)
       parameters            = optional(map(string))
-      schema_column = optional(object({
+      schema_column = optional(list(object({
         description = optional(string)
         name        = string
         type        = optional(string)
-      }))
+      })))
     })))
     data_factory_dataset_delimited_texts = optional(map(object({
       linked_service_name   = string
@@ -942,11 +942,11 @@ EOT
         path                     = string
         relative_url             = string
       }))
-      schema_column = optional(object({
+      schema_column = optional(list(object({
         description = optional(string)
         name        = string
         type        = optional(string)
-      }))
+      })))
     })))
     data_factory_dataset_https = optional(map(object({
       linked_service_name   = string
@@ -959,11 +959,11 @@ EOT
       relative_url          = optional(string)
       request_body          = optional(string)
       request_method        = optional(string)
-      schema_column = optional(object({
+      schema_column = optional(list(object({
         description = optional(string)
         name        = string
         type        = optional(string)
-      }))
+      })))
     })))
     data_factory_dataset_jsons = optional(map(object({
       linked_service_name   = string
@@ -989,11 +989,11 @@ EOT
         path                     = string
         relative_url             = string
       }))
-      schema_column = optional(object({
+      schema_column = optional(list(object({
         description = optional(string)
         name        = string
         type        = optional(string)
-      }))
+      })))
     })))
     data_factory_dataset_mysqls = optional(map(object({
       linked_service_name   = string
@@ -1004,11 +1004,11 @@ EOT
       folder                = optional(string)
       parameters            = optional(map(string))
       table_name            = optional(string)
-      schema_column = optional(object({
+      schema_column = optional(list(object({
         description = optional(string)
         name        = string
         type        = optional(string)
-      }))
+      })))
     })))
     data_factory_dataset_parquets = optional(map(object({
       linked_service_name   = string
@@ -1043,11 +1043,11 @@ EOT
         path                     = optional(string)
         relative_url             = string
       }))
-      schema_column = optional(object({
+      schema_column = optional(list(object({
         description = optional(string)
         name        = string
         type        = optional(string)
-      }))
+      })))
     })))
     data_factory_dataset_postgresqls = optional(map(object({
       linked_service_name   = string
@@ -1058,11 +1058,11 @@ EOT
       folder                = optional(string)
       parameters            = optional(map(string))
       table_name            = optional(string)
-      schema_column = optional(object({
+      schema_column = optional(list(object({
         description = optional(string)
         name        = string
         type        = optional(string)
-      }))
+      })))
     })))
     data_factory_dataset_snowflakes = optional(map(object({
       linked_service_name   = string
@@ -1074,12 +1074,12 @@ EOT
       parameters            = optional(map(string))
       schema_name           = optional(string)
       table_name            = optional(string)
-      schema_column = optional(object({
+      schema_column = optional(list(object({
         name      = string
         precision = optional(number)
         scale     = optional(number)
         type      = optional(string)
-      }))
+      })))
     })))
     data_factory_dataset_sql_server_tables = optional(map(object({
       linked_service_name   = string
@@ -1090,11 +1090,11 @@ EOT
       folder                = optional(string)
       parameters            = optional(map(string))
       table_name            = optional(string)
-      schema_column = optional(object({
+      schema_column = optional(list(object({
         description = optional(string)
         name        = string
         type        = optional(string)
-      }))
+      })))
     })))
     data_factory_flowlet_data_flows = optional(map(object({
       name         = string
@@ -1103,7 +1103,7 @@ EOT
       folder       = optional(string)
       script       = optional(string)
       script_lines = optional(list(string))
-      sink = optional(object({
+      sink = optional(list(object({
         dataset = optional(object({
           name       = string
           parameters = optional(map(string))
@@ -1127,8 +1127,8 @@ EOT
           name       = string
           parameters = optional(map(string))
         }))
-      }))
-      source = optional(object({
+      })))
+      source = optional(list(object({
         dataset = optional(object({
           name       = string
           parameters = optional(map(string))
@@ -1152,8 +1152,8 @@ EOT
           name       = string
           parameters = optional(map(string))
         }))
-      }))
-      transformation = optional(object({
+      })))
+      transformation = optional(list(object({
         dataset = optional(object({
           name       = string
           parameters = optional(map(string))
@@ -1169,7 +1169,7 @@ EOT
           parameters = optional(map(string))
         }))
         name = string
-      }))
+      })))
     })))
     data_factory_integration_runtime_azures = optional(map(object({
       location                                      = string
@@ -1209,7 +1209,7 @@ EOT
         sas_token          = string
       }))
       express_custom_setup = optional(object({
-        command_key = optional(object({
+        command_key = optional(list(object({
           key_vault_password = optional(object({
             linked_service_name = string
             parameters          = optional(map(string))
@@ -1219,8 +1219,8 @@ EOT
           password    = optional(string)
           target_name = string
           user_name   = string
-        }))
-        component = optional(object({
+        })))
+        component = optional(list(object({
           key_vault_license = optional(object({
             linked_service_name = string
             parameters          = optional(map(string))
@@ -1229,17 +1229,17 @@ EOT
           }))
           license = optional(string)
           name    = string
-        }))
+        })))
         environment        = optional(map(string))
         powershell_version = optional(string)
       }))
       express_vnet_integration = optional(object({
         subnet_id = string
       }))
-      package_store = optional(object({
+      package_store = optional(list(object({
         linked_service_name = string
         name                = string
-      }))
+      })))
       pipeline_external_compute_scale = optional(object({
         number_of_external_nodes = optional(number)
         number_of_pipeline_nodes = optional(number)
@@ -1261,9 +1261,9 @@ EOT
       name                                         = string
       description                                  = optional(string)
       self_contained_interactive_authoring_enabled = optional(bool)
-      rbac_authorization = optional(object({
+      rbac_authorization = optional(list(object({
         resource_id = string
-      }))
+      })))
     })))
     data_factory_linked_custom_services = optional(map(object({
       name                  = string
@@ -1536,10 +1536,10 @@ EOT
       private_key_passphrase     = optional(string)
       private_key_path           = optional(string)
       skip_host_key_validation   = optional(bool)
-      key_vault_password = optional(object({
+      key_vault_password = optional(list(object({
         linked_service_name = string
         secret_name         = string
-      }))
+      })))
       key_vault_private_key_content_base64 = optional(object({
         linked_service_name = string
         secret_name         = string
@@ -1652,10 +1652,10 @@ EOT
       blob_path_ends_with   = optional(string)
       description           = optional(string)
       ignore_empty_blobs    = optional(bool)
-      pipeline = object({
+      pipeline = list(object({
         name       = string
         parameters = optional(map(string))
-      })
+      }))
     })))
     data_factory_trigger_custom_events = optional(map(object({
       eventgrid_topic_id    = string
@@ -1667,10 +1667,10 @@ EOT
       description           = optional(string)
       subject_begins_with   = optional(string)
       subject_ends_with     = optional(string)
-      pipeline = object({
+      pipeline = list(object({
         name       = string
         parameters = optional(map(string))
-      })
+      }))
     })))
     data_factory_trigger_schedules = optional(map(object({
       name                = string
@@ -1684,10 +1684,10 @@ EOT
       pipeline_parameters = optional(map(string))
       start_time          = optional(string)
       time_zone           = optional(string)
-      pipeline = optional(object({
+      pipeline = optional(list(object({
         name       = string
         parameters = optional(map(string))
-      }))
+      })))
       schedule = optional(object({
         days_of_month = optional(list(number))
         days_of_week  = optional(list(string))
@@ -1719,11 +1719,11 @@ EOT
         count    = number
         interval = optional(number) # Default: 30
       }))
-      trigger_dependency = optional(object({
+      trigger_dependency = optional(list(object({
         offset       = optional(string)
         size         = optional(string)
         trigger_name = optional(string)
-      }))
+      })))
     })))
   }))
 
