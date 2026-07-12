@@ -5,7 +5,7 @@ locals {
     for k1, v1 in var.data_factories : {
       for k2, v2 in coalesce(v1.data_factory_credential_service_principals, {}) :
       "${k1}/${k2}" => merge(v2, {
-        data_factory_id = module.data_factories.data_factories["${k1}"].id
+        data_factory_id = module.data_factories.data_factories_id["${k1}"]
       })
     }
   ]...)
@@ -14,7 +14,7 @@ locals {
     for k1, v1 in var.data_factories : {
       for k2, v2 in coalesce(v1.data_factory_credential_user_managed_identities, {}) :
       "${k1}/${k2}" => merge(v2, {
-        data_factory_id = module.data_factories.data_factories["${k1}"].id
+        data_factory_id = module.data_factories.data_factories_id["${k1}"]
       })
     }
   ]...)
@@ -23,7 +23,7 @@ locals {
     for k1, v1 in var.data_factories : {
       for k2, v2 in coalesce(v1.data_factory_custom_datasets, {}) :
       "${k1}/${k2}" => merge(v2, {
-        data_factory_id = module.data_factories.data_factories["${k1}"].id
+        data_factory_id = module.data_factories.data_factories_id["${k1}"]
       })
     }
   ]...)
@@ -32,7 +32,7 @@ locals {
     for k1, v1 in var.data_factories : {
       for k2, v2 in coalesce(v1.data_factory_customer_managed_keys, {}) :
       "${k1}/${k2}" => merge(v2, {
-        data_factory_id = module.data_factories.data_factories["${k1}"].id
+        data_factory_id = module.data_factories.data_factories_id["${k1}"]
       })
     }
   ]...)
@@ -41,7 +41,7 @@ locals {
     for k1, v1 in var.data_factories : {
       for k2, v2 in coalesce(v1.data_factory_data_flows, {}) :
       "${k1}/${k2}" => merge(v2, {
-        data_factory_id = module.data_factories.data_factories["${k1}"].id
+        data_factory_id = module.data_factories.data_factories_id["${k1}"]
       })
     }
   ]...)
@@ -50,7 +50,7 @@ locals {
     for k1, v1 in var.data_factories : {
       for k2, v2 in coalesce(v1.data_factory_dataset_azure_blobs, {}) :
       "${k1}/${k2}" => merge(v2, {
-        data_factory_id = module.data_factories.data_factories["${k1}"].id
+        data_factory_id = module.data_factories.data_factories_id["${k1}"]
       })
     }
   ]...)
@@ -59,7 +59,7 @@ locals {
     for k1, v1 in var.data_factories : {
       for k2, v2 in coalesce(v1.data_factory_dataset_azure_sql_tables, {}) :
       "${k1}/${k2}" => merge(v2, {
-        data_factory_id = module.data_factories.data_factories["${k1}"].id
+        data_factory_id = module.data_factories.data_factories_id["${k1}"]
       })
     }
   ]...)
@@ -68,7 +68,7 @@ locals {
     for k1, v1 in var.data_factories : {
       for k2, v2 in coalesce(v1.data_factory_dataset_binaries, {}) :
       "${k1}/${k2}" => merge(v2, {
-        data_factory_id = module.data_factories.data_factories["${k1}"].id
+        data_factory_id = module.data_factories.data_factories_id["${k1}"]
       })
     }
   ]...)
@@ -77,7 +77,7 @@ locals {
     for k1, v1 in var.data_factories : {
       for k2, v2 in coalesce(v1.data_factory_dataset_cosmosdb_sqlapis, {}) :
       "${k1}/${k2}" => merge(v2, {
-        data_factory_id = module.data_factories.data_factories["${k1}"].id
+        data_factory_id = module.data_factories.data_factories_id["${k1}"]
       })
     }
   ]...)
@@ -86,7 +86,7 @@ locals {
     for k1, v1 in var.data_factories : {
       for k2, v2 in coalesce(v1.data_factory_dataset_delimited_texts, {}) :
       "${k1}/${k2}" => merge(v2, {
-        data_factory_id = module.data_factories.data_factories["${k1}"].id
+        data_factory_id = module.data_factories.data_factories_id["${k1}"]
       })
     }
   ]...)
@@ -95,7 +95,7 @@ locals {
     for k1, v1 in var.data_factories : {
       for k2, v2 in coalesce(v1.data_factory_dataset_https, {}) :
       "${k1}/${k2}" => merge(v2, {
-        data_factory_id = module.data_factories.data_factories["${k1}"].id
+        data_factory_id = module.data_factories.data_factories_id["${k1}"]
       })
     }
   ]...)
@@ -104,7 +104,7 @@ locals {
     for k1, v1 in var.data_factories : {
       for k2, v2 in coalesce(v1.data_factory_dataset_jsons, {}) :
       "${k1}/${k2}" => merge(v2, {
-        data_factory_id = module.data_factories.data_factories["${k1}"].id
+        data_factory_id = module.data_factories.data_factories_id["${k1}"]
       })
     }
   ]...)
@@ -113,7 +113,7 @@ locals {
     for k1, v1 in var.data_factories : {
       for k2, v2 in coalesce(v1.data_factory_dataset_mysqls, {}) :
       "${k1}/${k2}" => merge(v2, {
-        data_factory_id = module.data_factories.data_factories["${k1}"].id
+        data_factory_id = module.data_factories.data_factories_id["${k1}"]
       })
     }
   ]...)
@@ -122,7 +122,7 @@ locals {
     for k1, v1 in var.data_factories : {
       for k2, v2 in coalesce(v1.data_factory_dataset_parquets, {}) :
       "${k1}/${k2}" => merge(v2, {
-        data_factory_id = module.data_factories.data_factories["${k1}"].id
+        data_factory_id = module.data_factories.data_factories_id["${k1}"]
       })
     }
   ]...)
@@ -131,7 +131,7 @@ locals {
     for k1, v1 in var.data_factories : {
       for k2, v2 in coalesce(v1.data_factory_dataset_postgresqls, {}) :
       "${k1}/${k2}" => merge(v2, {
-        data_factory_id = module.data_factories.data_factories["${k1}"].id
+        data_factory_id = module.data_factories.data_factories_id["${k1}"]
       })
     }
   ]...)
@@ -140,7 +140,7 @@ locals {
     for k1, v1 in var.data_factories : {
       for k2, v2 in coalesce(v1.data_factory_dataset_snowflakes, {}) :
       "${k1}/${k2}" => merge(v2, {
-        data_factory_id = module.data_factories.data_factories["${k1}"].id
+        data_factory_id = module.data_factories.data_factories_id["${k1}"]
       })
     }
   ]...)
@@ -149,7 +149,7 @@ locals {
     for k1, v1 in var.data_factories : {
       for k2, v2 in coalesce(v1.data_factory_dataset_sql_server_tables, {}) :
       "${k1}/${k2}" => merge(v2, {
-        data_factory_id = module.data_factories.data_factories["${k1}"].id
+        data_factory_id = module.data_factories.data_factories_id["${k1}"]
       })
     }
   ]...)
@@ -158,7 +158,7 @@ locals {
     for k1, v1 in var.data_factories : {
       for k2, v2 in coalesce(v1.data_factory_flowlet_data_flows, {}) :
       "${k1}/${k2}" => merge(v2, {
-        data_factory_id = module.data_factories.data_factories["${k1}"].id
+        data_factory_id = module.data_factories.data_factories_id["${k1}"]
       })
     }
   ]...)
@@ -167,7 +167,7 @@ locals {
     for k1, v1 in var.data_factories : {
       for k2, v2 in coalesce(v1.data_factory_integration_runtime_azures, {}) :
       "${k1}/${k2}" => merge(v2, {
-        data_factory_id = module.data_factories.data_factories["${k1}"].id
+        data_factory_id = module.data_factories.data_factories_id["${k1}"]
       })
     }
   ]...)
@@ -176,7 +176,7 @@ locals {
     for k1, v1 in var.data_factories : {
       for k2, v2 in coalesce(v1.data_factory_integration_runtime_azure_ssises, {}) :
       "${k1}/${k2}" => merge(v2, {
-        data_factory_id = module.data_factories.data_factories["${k1}"].id
+        data_factory_id = module.data_factories.data_factories_id["${k1}"]
       })
     }
   ]...)
@@ -185,7 +185,7 @@ locals {
     for k1, v1 in var.data_factories : {
       for k2, v2 in coalesce(v1.data_factory_integration_runtime_self_hosteds, {}) :
       "${k1}/${k2}" => merge(v2, {
-        data_factory_id = module.data_factories.data_factories["${k1}"].id
+        data_factory_id = module.data_factories.data_factories_id["${k1}"]
       })
     }
   ]...)
@@ -194,7 +194,7 @@ locals {
     for k1, v1 in var.data_factories : {
       for k2, v2 in coalesce(v1.data_factory_linked_custom_services, {}) :
       "${k1}/${k2}" => merge(v2, {
-        data_factory_id = module.data_factories.data_factories["${k1}"].id
+        data_factory_id = module.data_factories.data_factories_id["${k1}"]
       })
     }
   ]...)
@@ -203,7 +203,7 @@ locals {
     for k1, v1 in var.data_factories : {
       for k2, v2 in coalesce(v1.data_factory_linked_service_azure_blob_storages, {}) :
       "${k1}/${k2}" => merge(v2, {
-        data_factory_id = module.data_factories.data_factories["${k1}"].id
+        data_factory_id = module.data_factories.data_factories_id["${k1}"]
       })
     }
   ]...)
@@ -212,7 +212,7 @@ locals {
     for k1, v1 in var.data_factories : {
       for k2, v2 in coalesce(v1.data_factory_linked_service_azure_databrickses, {}) :
       "${k1}/${k2}" => merge(v2, {
-        data_factory_id = module.data_factories.data_factories["${k1}"].id
+        data_factory_id = module.data_factories.data_factories_id["${k1}"]
       })
     }
   ]...)
@@ -221,7 +221,7 @@ locals {
     for k1, v1 in var.data_factories : {
       for k2, v2 in coalesce(v1.data_factory_linked_service_azure_file_storages, {}) :
       "${k1}/${k2}" => merge(v2, {
-        data_factory_id = module.data_factories.data_factories["${k1}"].id
+        data_factory_id = module.data_factories.data_factories_id["${k1}"]
       })
     }
   ]...)
@@ -230,7 +230,7 @@ locals {
     for k1, v1 in var.data_factories : {
       for k2, v2 in coalesce(v1.data_factory_linked_service_azure_functions, {}) :
       "${k1}/${k2}" => merge(v2, {
-        data_factory_id = module.data_factories.data_factories["${k1}"].id
+        data_factory_id = module.data_factories.data_factories_id["${k1}"]
       })
     }
   ]...)
@@ -239,7 +239,7 @@ locals {
     for k1, v1 in var.data_factories : {
       for k2, v2 in coalesce(v1.data_factory_linked_service_azure_searches, {}) :
       "${k1}/${k2}" => merge(v2, {
-        data_factory_id = module.data_factories.data_factories["${k1}"].id
+        data_factory_id = module.data_factories.data_factories_id["${k1}"]
       })
     }
   ]...)
@@ -248,7 +248,7 @@ locals {
     for k1, v1 in var.data_factories : {
       for k2, v2 in coalesce(v1.data_factory_linked_service_azure_sql_databases, {}) :
       "${k1}/${k2}" => merge(v2, {
-        data_factory_id = module.data_factories.data_factories["${k1}"].id
+        data_factory_id = module.data_factories.data_factories_id["${k1}"]
       })
     }
   ]...)
@@ -257,7 +257,7 @@ locals {
     for k1, v1 in var.data_factories : {
       for k2, v2 in coalesce(v1.data_factory_linked_service_azure_table_storages, {}) :
       "${k1}/${k2}" => merge(v2, {
-        data_factory_id = module.data_factories.data_factories["${k1}"].id
+        data_factory_id = module.data_factories.data_factories_id["${k1}"]
       })
     }
   ]...)
@@ -266,7 +266,7 @@ locals {
     for k1, v1 in var.data_factories : {
       for k2, v2 in coalesce(v1.data_factory_linked_service_cosmosdbs, {}) :
       "${k1}/${k2}" => merge(v2, {
-        data_factory_id = module.data_factories.data_factories["${k1}"].id
+        data_factory_id = module.data_factories.data_factories_id["${k1}"]
       })
     }
   ]...)
@@ -275,7 +275,7 @@ locals {
     for k1, v1 in var.data_factories : {
       for k2, v2 in coalesce(v1.data_factory_linked_service_cosmosdb_mongoapis, {}) :
       "${k1}/${k2}" => merge(v2, {
-        data_factory_id = module.data_factories.data_factories["${k1}"].id
+        data_factory_id = module.data_factories.data_factories_id["${k1}"]
       })
     }
   ]...)
@@ -284,7 +284,7 @@ locals {
     for k1, v1 in var.data_factories : {
       for k2, v2 in coalesce(v1.data_factory_linked_service_data_lake_storage_gen2s, {}) :
       "${k1}/${k2}" => merge(v2, {
-        data_factory_id = module.data_factories.data_factories["${k1}"].id
+        data_factory_id = module.data_factories.data_factories_id["${k1}"]
       })
     }
   ]...)
@@ -293,7 +293,7 @@ locals {
     for k1, v1 in var.data_factories : {
       for k2, v2 in coalesce(v1.data_factory_linked_service_key_vaults, {}) :
       "${k1}/${k2}" => merge(v2, {
-        data_factory_id = module.data_factories.data_factories["${k1}"].id
+        data_factory_id = module.data_factories.data_factories_id["${k1}"]
       })
     }
   ]...)
@@ -302,7 +302,7 @@ locals {
     for k1, v1 in var.data_factories : {
       for k2, v2 in coalesce(v1.data_factory_linked_service_kustos, {}) :
       "${k1}/${k2}" => merge(v2, {
-        data_factory_id = module.data_factories.data_factories["${k1}"].id
+        data_factory_id = module.data_factories.data_factories_id["${k1}"]
       })
     }
   ]...)
@@ -311,7 +311,7 @@ locals {
     for k1, v1 in var.data_factories : {
       for k2, v2 in coalesce(v1.data_factory_linked_service_mysqls, {}) :
       "${k1}/${k2}" => merge(v2, {
-        data_factory_id = module.data_factories.data_factories["${k1}"].id
+        data_factory_id = module.data_factories.data_factories_id["${k1}"]
       })
     }
   ]...)
@@ -320,7 +320,7 @@ locals {
     for k1, v1 in var.data_factories : {
       for k2, v2 in coalesce(v1.data_factory_linked_service_odatas, {}) :
       "${k1}/${k2}" => merge(v2, {
-        data_factory_id = module.data_factories.data_factories["${k1}"].id
+        data_factory_id = module.data_factories.data_factories_id["${k1}"]
       })
     }
   ]...)
@@ -329,7 +329,7 @@ locals {
     for k1, v1 in var.data_factories : {
       for k2, v2 in coalesce(v1.data_factory_linked_service_odbcs, {}) :
       "${k1}/${k2}" => merge(v2, {
-        data_factory_id = module.data_factories.data_factories["${k1}"].id
+        data_factory_id = module.data_factories.data_factories_id["${k1}"]
       })
     }
   ]...)
@@ -338,7 +338,7 @@ locals {
     for k1, v1 in var.data_factories : {
       for k2, v2 in coalesce(v1.data_factory_linked_service_postgresqls, {}) :
       "${k1}/${k2}" => merge(v2, {
-        data_factory_id = module.data_factories.data_factories["${k1}"].id
+        data_factory_id = module.data_factories.data_factories_id["${k1}"]
       })
     }
   ]...)
@@ -347,7 +347,7 @@ locals {
     for k1, v1 in var.data_factories : {
       for k2, v2 in coalesce(v1.data_factory_linked_service_sftps, {}) :
       "${k1}/${k2}" => merge(v2, {
-        data_factory_id = module.data_factories.data_factories["${k1}"].id
+        data_factory_id = module.data_factories.data_factories_id["${k1}"]
       })
     }
   ]...)
@@ -356,7 +356,7 @@ locals {
     for k1, v1 in var.data_factories : {
       for k2, v2 in coalesce(v1.data_factory_linked_service_snowflakes, {}) :
       "${k1}/${k2}" => merge(v2, {
-        data_factory_id = module.data_factories.data_factories["${k1}"].id
+        data_factory_id = module.data_factories.data_factories_id["${k1}"]
       })
     }
   ]...)
@@ -365,7 +365,7 @@ locals {
     for k1, v1 in var.data_factories : {
       for k2, v2 in coalesce(v1.data_factory_linked_service_sql_managed_instances, {}) :
       "${k1}/${k2}" => merge(v2, {
-        data_factory_id = module.data_factories.data_factories["${k1}"].id
+        data_factory_id = module.data_factories.data_factories_id["${k1}"]
       })
     }
   ]...)
@@ -374,7 +374,7 @@ locals {
     for k1, v1 in var.data_factories : {
       for k2, v2 in coalesce(v1.data_factory_linked_service_sql_servers, {}) :
       "${k1}/${k2}" => merge(v2, {
-        data_factory_id = module.data_factories.data_factories["${k1}"].id
+        data_factory_id = module.data_factories.data_factories_id["${k1}"]
       })
     }
   ]...)
@@ -383,7 +383,7 @@ locals {
     for k1, v1 in var.data_factories : {
       for k2, v2 in coalesce(v1.data_factory_linked_service_synapses, {}) :
       "${k1}/${k2}" => merge(v2, {
-        data_factory_id = module.data_factories.data_factories["${k1}"].id
+        data_factory_id = module.data_factories.data_factories_id["${k1}"]
       })
     }
   ]...)
@@ -392,7 +392,7 @@ locals {
     for k1, v1 in var.data_factories : {
       for k2, v2 in coalesce(v1.data_factory_linked_service_webs, {}) :
       "${k1}/${k2}" => merge(v2, {
-        data_factory_id = module.data_factories.data_factories["${k1}"].id
+        data_factory_id = module.data_factories.data_factories_id["${k1}"]
       })
     }
   ]...)
@@ -401,7 +401,7 @@ locals {
     for k1, v1 in var.data_factories : {
       for k2, v2 in coalesce(v1.data_factory_managed_private_endpoints, {}) :
       "${k1}/${k2}" => merge(v2, {
-        data_factory_id = module.data_factories.data_factories["${k1}"].id
+        data_factory_id = module.data_factories.data_factories_id["${k1}"]
       })
     }
   ]...)
@@ -410,7 +410,7 @@ locals {
     for k1, v1 in var.data_factories : {
       for k2, v2 in coalesce(v1.data_factory_pipelines, {}) :
       "${k1}/${k2}" => merge(v2, {
-        data_factory_id = module.data_factories.data_factories["${k1}"].id
+        data_factory_id = module.data_factories.data_factories_id["${k1}"]
       })
     }
   ]...)
@@ -419,7 +419,7 @@ locals {
     for k1, v1 in var.data_factories : {
       for k2, v2 in coalesce(v1.data_factory_trigger_blob_events, {}) :
       "${k1}/${k2}" => merge(v2, {
-        data_factory_id = module.data_factories.data_factories["${k1}"].id
+        data_factory_id = module.data_factories.data_factories_id["${k1}"]
       })
     }
   ]...)
@@ -428,7 +428,7 @@ locals {
     for k1, v1 in var.data_factories : {
       for k2, v2 in coalesce(v1.data_factory_trigger_custom_events, {}) :
       "${k1}/${k2}" => merge(v2, {
-        data_factory_id = module.data_factories.data_factories["${k1}"].id
+        data_factory_id = module.data_factories.data_factories_id["${k1}"]
       })
     }
   ]...)
@@ -437,7 +437,7 @@ locals {
     for k1, v1 in var.data_factories : {
       for k2, v2 in coalesce(v1.data_factory_trigger_schedules, {}) :
       "${k1}/${k2}" => merge(v2, {
-        data_factory_id = module.data_factories.data_factories["${k1}"].id
+        data_factory_id = module.data_factories.data_factories_id["${k1}"]
       })
     }
   ]...)
@@ -446,7 +446,7 @@ locals {
     for k1, v1 in var.data_factories : {
       for k2, v2 in coalesce(v1.data_factory_trigger_tumbling_windows, {}) :
       "${k1}/${k2}" => merge(v2, {
-        data_factory_id = module.data_factories.data_factories["${k1}"].id
+        data_factory_id = module.data_factories.data_factories_id["${k1}"]
       })
     }
   ]...)
