@@ -1,4 +1,9 @@
 # --- azurerm_data_factory ---
+output "data_factories_id" {
+  description = "Map of id values across all data_factories, keyed the same as var.data_factories"
+  value       = module.data_factories.data_factories_id
+}
+
 output "data_factories_customer_managed_key_id" {
   description = "Map of customer_managed_key_id values across all data_factories, keyed the same as var.data_factories"
   value       = module.data_factories.data_factories_customer_managed_key_id
@@ -65,6 +70,11 @@ output "data_factories_vsts_configuration" {
 }
 
 # --- azurerm_data_factory_credential_service_principal ---
+output "data_factory_credential_service_principals_id" {
+  description = "Map of id values across all data_factory_credential_service_principals, keyed the same as var.data_factory_credential_service_principals"
+  value       = module.data_factory_credential_service_principals.data_factory_credential_service_principals_id
+}
+
 output "data_factory_credential_service_principals_annotations" {
   description = "Map of annotations values across all data_factory_credential_service_principals, keyed the same as var.data_factory_credential_service_principals"
   value       = module.data_factory_credential_service_principals.data_factory_credential_service_principals_annotations
@@ -101,6 +111,11 @@ output "data_factory_credential_service_principals_tenant_id" {
 }
 
 # --- azurerm_data_factory_credential_user_managed_identity ---
+output "data_factory_credential_user_managed_identities_id" {
+  description = "Map of id values across all data_factory_credential_user_managed_identities, keyed the same as var.data_factory_credential_user_managed_identities"
+  value       = module.data_factory_credential_user_managed_identities.data_factory_credential_user_managed_identities_id
+}
+
 output "data_factory_credential_user_managed_identities_annotations" {
   description = "Map of annotations values across all data_factory_credential_user_managed_identities, keyed the same as var.data_factory_credential_user_managed_identities"
   value       = module.data_factory_credential_user_managed_identities.data_factory_credential_user_managed_identities_annotations
@@ -127,6 +142,11 @@ output "data_factory_credential_user_managed_identities_name" {
 }
 
 # --- azurerm_data_factory_custom_dataset ---
+output "data_factory_custom_datasets_id" {
+  description = "Map of id values across all data_factory_custom_datasets, keyed the same as var.data_factory_custom_datasets"
+  value       = module.data_factory_custom_datasets.data_factory_custom_datasets_id
+}
+
 output "data_factory_custom_datasets_additional_properties" {
   description = "Map of additional_properties values across all data_factory_custom_datasets, keyed the same as var.data_factory_custom_datasets"
   value       = module.data_factory_custom_datasets.data_factory_custom_datasets_additional_properties
@@ -183,6 +203,11 @@ output "data_factory_custom_datasets_type_properties_json" {
 }
 
 # --- azurerm_data_factory_customer_managed_key ---
+output "data_factory_customer_managed_keys_id" {
+  description = "Map of id values across all data_factory_customer_managed_keys, keyed the same as var.data_factory_customer_managed_keys"
+  value       = module.data_factory_customer_managed_keys.data_factory_customer_managed_keys_id
+}
+
 output "data_factory_customer_managed_keys_customer_managed_key_id" {
   description = "Map of customer_managed_key_id values across all data_factory_customer_managed_keys, keyed the same as var.data_factory_customer_managed_keys"
   value       = module.data_factory_customer_managed_keys.data_factory_customer_managed_keys_customer_managed_key_id
@@ -199,6 +224,11 @@ output "data_factory_customer_managed_keys_user_assigned_identity_id" {
 }
 
 # --- azurerm_data_factory_data_flow ---
+output "data_factory_data_flows_id" {
+  description = "Map of id values across all data_factory_data_flows, keyed the same as var.data_factory_data_flows"
+  value       = module.data_factory_data_flows.data_factory_data_flows_id
+}
+
 output "data_factory_data_flows_annotations" {
   description = "Map of annotations values across all data_factory_data_flows, keyed the same as var.data_factory_data_flows"
   value       = module.data_factory_data_flows.data_factory_data_flows_annotations
@@ -250,6 +280,11 @@ output "data_factory_data_flows_transformation" {
 }
 
 # --- azurerm_data_factory_dataset_azure_blob ---
+output "data_factory_dataset_azure_blobs_id" {
+  description = "Map of id values across all data_factory_dataset_azure_blobs, keyed the same as var.data_factory_dataset_azure_blobs"
+  value       = module.data_factory_dataset_azure_blobs.data_factory_dataset_azure_blobs_id
+}
+
 output "data_factory_dataset_azure_blobs_additional_properties" {
   description = "Map of additional_properties values across all data_factory_dataset_azure_blobs, keyed the same as var.data_factory_dataset_azure_blobs"
   value       = module.data_factory_dataset_azure_blobs.data_factory_dataset_azure_blobs_additional_properties
@@ -316,6 +351,11 @@ output "data_factory_dataset_azure_blobs_schema_column" {
 }
 
 # --- azurerm_data_factory_dataset_azure_sql_table ---
+output "data_factory_dataset_azure_sql_tables_id" {
+  description = "Map of id values across all data_factory_dataset_azure_sql_tables, keyed the same as var.data_factory_dataset_azure_sql_tables"
+  value       = module.data_factory_dataset_azure_sql_tables.data_factory_dataset_azure_sql_tables_id
+}
+
 output "data_factory_dataset_azure_sql_tables_additional_properties" {
   description = "Map of additional_properties values across all data_factory_dataset_azure_sql_tables, keyed the same as var.data_factory_dataset_azure_sql_tables"
   value       = module.data_factory_dataset_azure_sql_tables.data_factory_dataset_azure_sql_tables_additional_properties
@@ -372,6 +412,11 @@ output "data_factory_dataset_azure_sql_tables_table" {
 }
 
 # --- azurerm_data_factory_dataset_binary ---
+output "data_factory_dataset_binaries_id" {
+  description = "Map of id values across all data_factory_dataset_binaries, keyed the same as var.data_factory_dataset_binaries"
+  value       = module.data_factory_dataset_binaries.data_factory_dataset_binaries_id
+}
+
 output "data_factory_dataset_binaries_additional_properties" {
   description = "Map of additional_properties values across all data_factory_dataset_binaries, keyed the same as var.data_factory_dataset_binaries"
   value       = module.data_factory_dataset_binaries.data_factory_dataset_binaries_additional_properties
@@ -433,6 +478,11 @@ output "data_factory_dataset_binaries_sftp_server_location" {
 }
 
 # --- azurerm_data_factory_dataset_cosmosdb_sqlapi ---
+output "data_factory_dataset_cosmosdb_sqlapis_id" {
+  description = "Map of id values across all data_factory_dataset_cosmosdb_sqlapis, keyed the same as var.data_factory_dataset_cosmosdb_sqlapis"
+  value       = module.data_factory_dataset_cosmosdb_sqlapis.data_factory_dataset_cosmosdb_sqlapis_id
+}
+
 output "data_factory_dataset_cosmosdb_sqlapis_additional_properties" {
   description = "Map of additional_properties values across all data_factory_dataset_cosmosdb_sqlapis, keyed the same as var.data_factory_dataset_cosmosdb_sqlapis"
   value       = module.data_factory_dataset_cosmosdb_sqlapis.data_factory_dataset_cosmosdb_sqlapis_additional_properties
@@ -484,6 +534,11 @@ output "data_factory_dataset_cosmosdb_sqlapis_schema_column" {
 }
 
 # --- azurerm_data_factory_dataset_delimited_text ---
+output "data_factory_dataset_delimited_texts_id" {
+  description = "Map of id values across all data_factory_dataset_delimited_texts, keyed the same as var.data_factory_dataset_delimited_texts"
+  value       = module.data_factory_dataset_delimited_texts.data_factory_dataset_delimited_texts_id
+}
+
 output "data_factory_dataset_delimited_texts_additional_properties" {
   description = "Map of additional_properties values across all data_factory_dataset_delimited_texts, keyed the same as var.data_factory_dataset_delimited_texts"
   value       = module.data_factory_dataset_delimited_texts.data_factory_dataset_delimited_texts_additional_properties
@@ -590,6 +645,11 @@ output "data_factory_dataset_delimited_texts_schema_column" {
 }
 
 # --- azurerm_data_factory_dataset_http ---
+output "data_factory_dataset_https_id" {
+  description = "Map of id values across all data_factory_dataset_https, keyed the same as var.data_factory_dataset_https"
+  value       = module.data_factory_dataset_https.data_factory_dataset_https_id
+}
+
 output "data_factory_dataset_https_additional_properties" {
   description = "Map of additional_properties values across all data_factory_dataset_https, keyed the same as var.data_factory_dataset_https"
   value       = module.data_factory_dataset_https.data_factory_dataset_https_additional_properties
@@ -651,6 +711,11 @@ output "data_factory_dataset_https_schema_column" {
 }
 
 # --- azurerm_data_factory_dataset_json ---
+output "data_factory_dataset_jsons_id" {
+  description = "Map of id values across all data_factory_dataset_jsons, keyed the same as var.data_factory_dataset_jsons"
+  value       = module.data_factory_dataset_jsons.data_factory_dataset_jsons_id
+}
+
 output "data_factory_dataset_jsons_additional_properties" {
   description = "Map of additional_properties values across all data_factory_dataset_jsons, keyed the same as var.data_factory_dataset_jsons"
   value       = module.data_factory_dataset_jsons.data_factory_dataset_jsons_additional_properties
@@ -712,6 +777,11 @@ output "data_factory_dataset_jsons_schema_column" {
 }
 
 # --- azurerm_data_factory_dataset_mysql ---
+output "data_factory_dataset_mysqls_id" {
+  description = "Map of id values across all data_factory_dataset_mysqls, keyed the same as var.data_factory_dataset_mysqls"
+  value       = module.data_factory_dataset_mysqls.data_factory_dataset_mysqls_id
+}
+
 output "data_factory_dataset_mysqls_additional_properties" {
   description = "Map of additional_properties values across all data_factory_dataset_mysqls, keyed the same as var.data_factory_dataset_mysqls"
   value       = module.data_factory_dataset_mysqls.data_factory_dataset_mysqls_additional_properties
@@ -763,6 +833,11 @@ output "data_factory_dataset_mysqls_table_name" {
 }
 
 # --- azurerm_data_factory_dataset_parquet ---
+output "data_factory_dataset_parquets_id" {
+  description = "Map of id values across all data_factory_dataset_parquets, keyed the same as var.data_factory_dataset_parquets"
+  value       = module.data_factory_dataset_parquets.data_factory_dataset_parquets_id
+}
+
 output "data_factory_dataset_parquets_additional_properties" {
   description = "Map of additional_properties values across all data_factory_dataset_parquets, keyed the same as var.data_factory_dataset_parquets"
   value       = module.data_factory_dataset_parquets.data_factory_dataset_parquets_additional_properties
@@ -834,6 +909,11 @@ output "data_factory_dataset_parquets_schema_column" {
 }
 
 # --- azurerm_data_factory_dataset_postgresql ---
+output "data_factory_dataset_postgresqls_id" {
+  description = "Map of id values across all data_factory_dataset_postgresqls, keyed the same as var.data_factory_dataset_postgresqls"
+  value       = module.data_factory_dataset_postgresqls.data_factory_dataset_postgresqls_id
+}
+
 output "data_factory_dataset_postgresqls_additional_properties" {
   description = "Map of additional_properties values across all data_factory_dataset_postgresqls, keyed the same as var.data_factory_dataset_postgresqls"
   value       = module.data_factory_dataset_postgresqls.data_factory_dataset_postgresqls_additional_properties
@@ -885,6 +965,11 @@ output "data_factory_dataset_postgresqls_table_name" {
 }
 
 # --- azurerm_data_factory_dataset_snowflake ---
+output "data_factory_dataset_snowflakes_id" {
+  description = "Map of id values across all data_factory_dataset_snowflakes, keyed the same as var.data_factory_dataset_snowflakes"
+  value       = module.data_factory_dataset_snowflakes.data_factory_dataset_snowflakes_id
+}
+
 output "data_factory_dataset_snowflakes_additional_properties" {
   description = "Map of additional_properties values across all data_factory_dataset_snowflakes, keyed the same as var.data_factory_dataset_snowflakes"
   value       = module.data_factory_dataset_snowflakes.data_factory_dataset_snowflakes_additional_properties
@@ -941,6 +1026,11 @@ output "data_factory_dataset_snowflakes_table_name" {
 }
 
 # --- azurerm_data_factory_dataset_sql_server_table ---
+output "data_factory_dataset_sql_server_tables_id" {
+  description = "Map of id values across all data_factory_dataset_sql_server_tables, keyed the same as var.data_factory_dataset_sql_server_tables"
+  value       = module.data_factory_dataset_sql_server_tables.data_factory_dataset_sql_server_tables_id
+}
+
 output "data_factory_dataset_sql_server_tables_additional_properties" {
   description = "Map of additional_properties values across all data_factory_dataset_sql_server_tables, keyed the same as var.data_factory_dataset_sql_server_tables"
   value       = module.data_factory_dataset_sql_server_tables.data_factory_dataset_sql_server_tables_additional_properties
@@ -992,6 +1082,11 @@ output "data_factory_dataset_sql_server_tables_table_name" {
 }
 
 # --- azurerm_data_factory_flowlet_data_flow ---
+output "data_factory_flowlet_data_flows_id" {
+  description = "Map of id values across all data_factory_flowlet_data_flows, keyed the same as var.data_factory_flowlet_data_flows"
+  value       = module.data_factory_flowlet_data_flows.data_factory_flowlet_data_flows_id
+}
+
 output "data_factory_flowlet_data_flows_annotations" {
   description = "Map of annotations values across all data_factory_flowlet_data_flows, keyed the same as var.data_factory_flowlet_data_flows"
   value       = module.data_factory_flowlet_data_flows.data_factory_flowlet_data_flows_annotations
@@ -1043,6 +1138,11 @@ output "data_factory_flowlet_data_flows_transformation" {
 }
 
 # --- azurerm_data_factory_integration_runtime_azure ---
+output "data_factory_integration_runtime_azures_id" {
+  description = "Map of id values across all data_factory_integration_runtime_azures, keyed the same as var.data_factory_integration_runtime_azures"
+  value       = module.data_factory_integration_runtime_azures.data_factory_integration_runtime_azures_id
+}
+
 output "data_factory_integration_runtime_azures_cleanup_enabled" {
   description = "Map of cleanup_enabled values across all data_factory_integration_runtime_azures, keyed the same as var.data_factory_integration_runtime_azures"
   value       = module.data_factory_integration_runtime_azures.data_factory_integration_runtime_azures_cleanup_enabled
@@ -1094,6 +1194,11 @@ output "data_factory_integration_runtime_azures_virtual_network_enabled" {
 }
 
 # --- azurerm_data_factory_integration_runtime_azure_ssis ---
+output "data_factory_integration_runtime_azure_ssises_id" {
+  description = "Map of id values across all data_factory_integration_runtime_azure_ssises, keyed the same as var.data_factory_integration_runtime_azure_ssises"
+  value       = module.data_factory_integration_runtime_azure_ssises.data_factory_integration_runtime_azure_ssises_id
+}
+
 output "data_factory_integration_runtime_azure_ssises_catalog_info" {
   description = "Map of catalog_info values across all data_factory_integration_runtime_azure_ssises, keyed the same as var.data_factory_integration_runtime_azure_ssises"
   value       = module.data_factory_integration_runtime_azure_ssises.data_factory_integration_runtime_azure_ssises_catalog_info
@@ -1193,6 +1298,11 @@ output "data_factory_integration_runtime_azure_ssises_vnet_integration" {
 }
 
 # --- azurerm_data_factory_integration_runtime_self_hosted ---
+output "data_factory_integration_runtime_self_hosteds_id" {
+  description = "Map of id values across all data_factory_integration_runtime_self_hosteds, keyed the same as var.data_factory_integration_runtime_self_hosteds"
+  value       = module.data_factory_integration_runtime_self_hosteds.data_factory_integration_runtime_self_hosteds_id
+}
+
 output "data_factory_integration_runtime_self_hosteds_data_factory_id" {
   description = "Map of data_factory_id values across all data_factory_integration_runtime_self_hosteds, keyed the same as var.data_factory_integration_runtime_self_hosteds"
   value       = module.data_factory_integration_runtime_self_hosteds.data_factory_integration_runtime_self_hosteds_data_factory_id
@@ -1229,6 +1339,11 @@ output "data_factory_integration_runtime_self_hosteds_self_contained_interactive
 }
 
 # --- azurerm_data_factory_linked_custom_service ---
+output "data_factory_linked_custom_services_id" {
+  description = "Map of id values across all data_factory_linked_custom_services, keyed the same as var.data_factory_linked_custom_services"
+  value       = module.data_factory_linked_custom_services.data_factory_linked_custom_services_id
+}
+
 output "data_factory_linked_custom_services_additional_properties" {
   description = "Map of additional_properties values across all data_factory_linked_custom_services, keyed the same as var.data_factory_linked_custom_services"
   value       = module.data_factory_linked_custom_services.data_factory_linked_custom_services_additional_properties
@@ -1275,6 +1390,11 @@ output "data_factory_linked_custom_services_type_properties_json" {
 }
 
 # --- azurerm_data_factory_linked_service_azure_blob_storage ---
+output "data_factory_linked_service_azure_blob_storages_id" {
+  description = "Map of id values across all data_factory_linked_service_azure_blob_storages, keyed the same as var.data_factory_linked_service_azure_blob_storages"
+  value       = module.data_factory_linked_service_azure_blob_storages.data_factory_linked_service_azure_blob_storages_id
+}
+
 output "data_factory_linked_service_azure_blob_storages_additional_properties" {
   description = "Map of additional_properties values across all data_factory_linked_service_azure_blob_storages, keyed the same as var.data_factory_linked_service_azure_blob_storages"
   value       = module.data_factory_linked_service_azure_blob_storages.data_factory_linked_service_azure_blob_storages_additional_properties
@@ -1374,6 +1494,11 @@ output "data_factory_linked_service_azure_blob_storages_use_managed_identity" {
 }
 
 # --- azurerm_data_factory_linked_service_azure_databricks ---
+output "data_factory_linked_service_azure_databrickses_id" {
+  description = "Map of id values across all data_factory_linked_service_azure_databrickses, keyed the same as var.data_factory_linked_service_azure_databrickses"
+  value       = module.data_factory_linked_service_azure_databrickses.data_factory_linked_service_azure_databrickses_id
+}
+
 output "data_factory_linked_service_azure_databrickses_access_token" {
   description = "Map of access_token values across all data_factory_linked_service_azure_databrickses, keyed the same as var.data_factory_linked_service_azure_databrickses"
   value       = module.data_factory_linked_service_azure_databrickses.data_factory_linked_service_azure_databrickses_access_token
@@ -1451,6 +1576,11 @@ output "data_factory_linked_service_azure_databrickses_parameters" {
 }
 
 # --- azurerm_data_factory_linked_service_azure_file_storage ---
+output "data_factory_linked_service_azure_file_storages_id" {
+  description = "Map of id values across all data_factory_linked_service_azure_file_storages, keyed the same as var.data_factory_linked_service_azure_file_storages"
+  value       = module.data_factory_linked_service_azure_file_storages.data_factory_linked_service_azure_file_storages_id
+}
+
 output "data_factory_linked_service_azure_file_storages_additional_properties" {
   description = "Map of additional_properties values across all data_factory_linked_service_azure_file_storages, keyed the same as var.data_factory_linked_service_azure_file_storages"
   value       = module.data_factory_linked_service_azure_file_storages.data_factory_linked_service_azure_file_storages_additional_properties
@@ -1519,6 +1649,11 @@ output "data_factory_linked_service_azure_file_storages_user_id" {
 }
 
 # --- azurerm_data_factory_linked_service_azure_function ---
+output "data_factory_linked_service_azure_functions_id" {
+  description = "Map of id values across all data_factory_linked_service_azure_functions, keyed the same as var.data_factory_linked_service_azure_functions"
+  value       = module.data_factory_linked_service_azure_functions.data_factory_linked_service_azure_functions_id
+}
+
 output "data_factory_linked_service_azure_functions_additional_properties" {
   description = "Map of additional_properties values across all data_factory_linked_service_azure_functions, keyed the same as var.data_factory_linked_service_azure_functions"
   value       = module.data_factory_linked_service_azure_functions.data_factory_linked_service_azure_functions_additional_properties
@@ -1571,6 +1706,11 @@ output "data_factory_linked_service_azure_functions_url" {
 }
 
 # --- azurerm_data_factory_linked_service_azure_search ---
+output "data_factory_linked_service_azure_searches_id" {
+  description = "Map of id values across all data_factory_linked_service_azure_searches, keyed the same as var.data_factory_linked_service_azure_searches"
+  value       = module.data_factory_linked_service_azure_searches.data_factory_linked_service_azure_searches_id
+}
+
 output "data_factory_linked_service_azure_searches_additional_properties" {
   description = "Map of additional_properties values across all data_factory_linked_service_azure_searches, keyed the same as var.data_factory_linked_service_azure_searches"
   value       = module.data_factory_linked_service_azure_searches.data_factory_linked_service_azure_searches_additional_properties
@@ -1622,6 +1762,11 @@ output "data_factory_linked_service_azure_searches_url" {
 }
 
 # --- azurerm_data_factory_linked_service_azure_sql_database ---
+output "data_factory_linked_service_azure_sql_databases_id" {
+  description = "Map of id values across all data_factory_linked_service_azure_sql_databases, keyed the same as var.data_factory_linked_service_azure_sql_databases"
+  value       = module.data_factory_linked_service_azure_sql_databases.data_factory_linked_service_azure_sql_databases_id
+}
+
 output "data_factory_linked_service_azure_sql_databases_additional_properties" {
   description = "Map of additional_properties values across all data_factory_linked_service_azure_sql_databases, keyed the same as var.data_factory_linked_service_azure_sql_databases"
   value       = module.data_factory_linked_service_azure_sql_databases.data_factory_linked_service_azure_sql_databases_additional_properties
@@ -1698,6 +1843,11 @@ output "data_factory_linked_service_azure_sql_databases_use_managed_identity" {
 }
 
 # --- azurerm_data_factory_linked_service_azure_table_storage ---
+output "data_factory_linked_service_azure_table_storages_id" {
+  description = "Map of id values across all data_factory_linked_service_azure_table_storages, keyed the same as var.data_factory_linked_service_azure_table_storages"
+  value       = module.data_factory_linked_service_azure_table_storages.data_factory_linked_service_azure_table_storages_id
+}
+
 output "data_factory_linked_service_azure_table_storages_additional_properties" {
   description = "Map of additional_properties values across all data_factory_linked_service_azure_table_storages, keyed the same as var.data_factory_linked_service_azure_table_storages"
   value       = module.data_factory_linked_service_azure_table_storages.data_factory_linked_service_azure_table_storages_additional_properties
@@ -1740,6 +1890,11 @@ output "data_factory_linked_service_azure_table_storages_parameters" {
 }
 
 # --- azurerm_data_factory_linked_service_cosmosdb ---
+output "data_factory_linked_service_cosmosdbs_id" {
+  description = "Map of id values across all data_factory_linked_service_cosmosdbs, keyed the same as var.data_factory_linked_service_cosmosdbs"
+  value       = module.data_factory_linked_service_cosmosdbs.data_factory_linked_service_cosmosdbs_id
+}
+
 output "data_factory_linked_service_cosmosdbs_account_endpoint" {
   description = "Map of account_endpoint values across all data_factory_linked_service_cosmosdbs, keyed the same as var.data_factory_linked_service_cosmosdbs"
   value       = module.data_factory_linked_service_cosmosdbs.data_factory_linked_service_cosmosdbs_account_endpoint
@@ -1798,6 +1953,11 @@ output "data_factory_linked_service_cosmosdbs_parameters" {
 }
 
 # --- azurerm_data_factory_linked_service_cosmosdb_mongoapi ---
+output "data_factory_linked_service_cosmosdb_mongoapis_id" {
+  description = "Map of id values across all data_factory_linked_service_cosmosdb_mongoapis, keyed the same as var.data_factory_linked_service_cosmosdb_mongoapis"
+  value       = module.data_factory_linked_service_cosmosdb_mongoapis.data_factory_linked_service_cosmosdb_mongoapis_id
+}
+
 output "data_factory_linked_service_cosmosdb_mongoapis_additional_properties" {
   description = "Map of additional_properties values across all data_factory_linked_service_cosmosdb_mongoapis, keyed the same as var.data_factory_linked_service_cosmosdb_mongoapis"
   value       = module.data_factory_linked_service_cosmosdb_mongoapis.data_factory_linked_service_cosmosdb_mongoapis_additional_properties
@@ -1850,6 +2010,11 @@ output "data_factory_linked_service_cosmosdb_mongoapis_server_version_is_32_or_h
 }
 
 # --- azurerm_data_factory_linked_service_data_lake_storage_gen2 ---
+output "data_factory_linked_service_data_lake_storage_gen2s_id" {
+  description = "Map of id values across all data_factory_linked_service_data_lake_storage_gen2s, keyed the same as var.data_factory_linked_service_data_lake_storage_gen2s"
+  value       = module.data_factory_linked_service_data_lake_storage_gen2s.data_factory_linked_service_data_lake_storage_gen2s_id
+}
+
 output "data_factory_linked_service_data_lake_storage_gen2s_additional_properties" {
   description = "Map of additional_properties values across all data_factory_linked_service_data_lake_storage_gen2s, keyed the same as var.data_factory_linked_service_data_lake_storage_gen2s"
   value       = module.data_factory_linked_service_data_lake_storage_gen2s.data_factory_linked_service_data_lake_storage_gen2s_additional_properties
@@ -1918,6 +2083,11 @@ output "data_factory_linked_service_data_lake_storage_gen2s_use_managed_identity
 }
 
 # --- azurerm_data_factory_linked_service_key_vault ---
+output "data_factory_linked_service_key_vaults_id" {
+  description = "Map of id values across all data_factory_linked_service_key_vaults, keyed the same as var.data_factory_linked_service_key_vaults"
+  value       = module.data_factory_linked_service_key_vaults.data_factory_linked_service_key_vaults_id
+}
+
 output "data_factory_linked_service_key_vaults_additional_properties" {
   description = "Map of additional_properties values across all data_factory_linked_service_key_vaults, keyed the same as var.data_factory_linked_service_key_vaults"
   value       = module.data_factory_linked_service_key_vaults.data_factory_linked_service_key_vaults_additional_properties
@@ -1959,6 +2129,11 @@ output "data_factory_linked_service_key_vaults_parameters" {
 }
 
 # --- azurerm_data_factory_linked_service_kusto ---
+output "data_factory_linked_service_kustos_id" {
+  description = "Map of id values across all data_factory_linked_service_kustos, keyed the same as var.data_factory_linked_service_kustos"
+  value       = module.data_factory_linked_service_kustos.data_factory_linked_service_kustos_id
+}
+
 output "data_factory_linked_service_kustos_additional_properties" {
   description = "Map of additional_properties values across all data_factory_linked_service_kustos, keyed the same as var.data_factory_linked_service_kustos"
   value       = module.data_factory_linked_service_kustos.data_factory_linked_service_kustos_additional_properties
@@ -2026,6 +2201,11 @@ output "data_factory_linked_service_kustos_use_managed_identity" {
 }
 
 # --- azurerm_data_factory_linked_service_mysql ---
+output "data_factory_linked_service_mysqls_id" {
+  description = "Map of id values across all data_factory_linked_service_mysqls, keyed the same as var.data_factory_linked_service_mysqls"
+  value       = module.data_factory_linked_service_mysqls.data_factory_linked_service_mysqls_id
+}
+
 output "data_factory_linked_service_mysqls_additional_properties" {
   description = "Map of additional_properties values across all data_factory_linked_service_mysqls, keyed the same as var.data_factory_linked_service_mysqls"
   value       = module.data_factory_linked_service_mysqls.data_factory_linked_service_mysqls_additional_properties
@@ -2072,6 +2252,11 @@ output "data_factory_linked_service_mysqls_parameters" {
 }
 
 # --- azurerm_data_factory_linked_service_odata ---
+output "data_factory_linked_service_odatas_id" {
+  description = "Map of id values across all data_factory_linked_service_odatas, keyed the same as var.data_factory_linked_service_odatas"
+  value       = module.data_factory_linked_service_odatas.data_factory_linked_service_odatas_id
+}
+
 output "data_factory_linked_service_odatas_additional_properties" {
   description = "Map of additional_properties values across all data_factory_linked_service_odatas, keyed the same as var.data_factory_linked_service_odatas"
   value       = module.data_factory_linked_service_odatas.data_factory_linked_service_odatas_additional_properties
@@ -2119,6 +2304,11 @@ output "data_factory_linked_service_odatas_url" {
 }
 
 # --- azurerm_data_factory_linked_service_odbc ---
+output "data_factory_linked_service_odbcs_id" {
+  description = "Map of id values across all data_factory_linked_service_odbcs, keyed the same as var.data_factory_linked_service_odbcs"
+  value       = module.data_factory_linked_service_odbcs.data_factory_linked_service_odbcs_id
+}
+
 output "data_factory_linked_service_odbcs_additional_properties" {
   description = "Map of additional_properties values across all data_factory_linked_service_odbcs, keyed the same as var.data_factory_linked_service_odbcs"
   value       = module.data_factory_linked_service_odbcs.data_factory_linked_service_odbcs_additional_properties
@@ -2166,6 +2356,11 @@ output "data_factory_linked_service_odbcs_parameters" {
 }
 
 # --- azurerm_data_factory_linked_service_postgresql ---
+output "data_factory_linked_service_postgresqls_id" {
+  description = "Map of id values across all data_factory_linked_service_postgresqls, keyed the same as var.data_factory_linked_service_postgresqls"
+  value       = module.data_factory_linked_service_postgresqls.data_factory_linked_service_postgresqls_id
+}
+
 output "data_factory_linked_service_postgresqls_additional_properties" {
   description = "Map of additional_properties values across all data_factory_linked_service_postgresqls, keyed the same as var.data_factory_linked_service_postgresqls"
   value       = module.data_factory_linked_service_postgresqls.data_factory_linked_service_postgresqls_additional_properties
@@ -2207,6 +2402,11 @@ output "data_factory_linked_service_postgresqls_parameters" {
 }
 
 # --- azurerm_data_factory_linked_service_sftp ---
+output "data_factory_linked_service_sftps_id" {
+  description = "Map of id values across all data_factory_linked_service_sftps, keyed the same as var.data_factory_linked_service_sftps"
+  value       = module.data_factory_linked_service_sftps.data_factory_linked_service_sftps_id
+}
+
 output "data_factory_linked_service_sftps_additional_properties" {
   description = "Map of additional_properties values across all data_factory_linked_service_sftps, keyed the same as var.data_factory_linked_service_sftps"
   value       = module.data_factory_linked_service_sftps.data_factory_linked_service_sftps_additional_properties
@@ -2311,6 +2511,11 @@ output "data_factory_linked_service_sftps_username" {
 }
 
 # --- azurerm_data_factory_linked_service_snowflake ---
+output "data_factory_linked_service_snowflakes_id" {
+  description = "Map of id values across all data_factory_linked_service_snowflakes, keyed the same as var.data_factory_linked_service_snowflakes"
+  value       = module.data_factory_linked_service_snowflakes.data_factory_linked_service_snowflakes_id
+}
+
 output "data_factory_linked_service_snowflakes_additional_properties" {
   description = "Map of additional_properties values across all data_factory_linked_service_snowflakes, keyed the same as var.data_factory_linked_service_snowflakes"
   value       = module.data_factory_linked_service_snowflakes.data_factory_linked_service_snowflakes_additional_properties
@@ -2357,6 +2562,11 @@ output "data_factory_linked_service_snowflakes_parameters" {
 }
 
 # --- azurerm_data_factory_linked_service_sql_managed_instance ---
+output "data_factory_linked_service_sql_managed_instances_id" {
+  description = "Map of id values across all data_factory_linked_service_sql_managed_instances, keyed the same as var.data_factory_linked_service_sql_managed_instances"
+  value       = module.data_factory_linked_service_sql_managed_instances.data_factory_linked_service_sql_managed_instances_id
+}
+
 output "data_factory_linked_service_sql_managed_instances_annotations" {
   description = "Map of annotations values across all data_factory_linked_service_sql_managed_instances, keyed the same as var.data_factory_linked_service_sql_managed_instances"
   value       = module.data_factory_linked_service_sql_managed_instances.data_factory_linked_service_sql_managed_instances_annotations
@@ -2420,6 +2630,11 @@ output "data_factory_linked_service_sql_managed_instances_tenant" {
 }
 
 # --- azurerm_data_factory_linked_service_sql_server ---
+output "data_factory_linked_service_sql_servers_id" {
+  description = "Map of id values across all data_factory_linked_service_sql_servers, keyed the same as var.data_factory_linked_service_sql_servers"
+  value       = module.data_factory_linked_service_sql_servers.data_factory_linked_service_sql_servers_id
+}
+
 output "data_factory_linked_service_sql_servers_additional_properties" {
   description = "Map of additional_properties values across all data_factory_linked_service_sql_servers, keyed the same as var.data_factory_linked_service_sql_servers"
   value       = module.data_factory_linked_service_sql_servers.data_factory_linked_service_sql_servers_additional_properties
@@ -2476,6 +2691,11 @@ output "data_factory_linked_service_sql_servers_user_name" {
 }
 
 # --- azurerm_data_factory_linked_service_synapse ---
+output "data_factory_linked_service_synapses_id" {
+  description = "Map of id values across all data_factory_linked_service_synapses, keyed the same as var.data_factory_linked_service_synapses"
+  value       = module.data_factory_linked_service_synapses.data_factory_linked_service_synapses_id
+}
+
 output "data_factory_linked_service_synapses_additional_properties" {
   description = "Map of additional_properties values across all data_factory_linked_service_synapses, keyed the same as var.data_factory_linked_service_synapses"
   value       = module.data_factory_linked_service_synapses.data_factory_linked_service_synapses_additional_properties
@@ -2522,6 +2742,11 @@ output "data_factory_linked_service_synapses_parameters" {
 }
 
 # --- azurerm_data_factory_linked_service_web ---
+output "data_factory_linked_service_webs_id" {
+  description = "Map of id values across all data_factory_linked_service_webs, keyed the same as var.data_factory_linked_service_webs"
+  value       = module.data_factory_linked_service_webs.data_factory_linked_service_webs_id
+}
+
 output "data_factory_linked_service_webs_additional_properties" {
   description = "Map of additional_properties values across all data_factory_linked_service_webs, keyed the same as var.data_factory_linked_service_webs"
   value       = module.data_factory_linked_service_webs.data_factory_linked_service_webs_additional_properties
@@ -2579,6 +2804,11 @@ output "data_factory_linked_service_webs_username" {
 }
 
 # --- azurerm_data_factory_managed_private_endpoint ---
+output "data_factory_managed_private_endpoints_id" {
+  description = "Map of id values across all data_factory_managed_private_endpoints, keyed the same as var.data_factory_managed_private_endpoints"
+  value       = module.data_factory_managed_private_endpoints.data_factory_managed_private_endpoints_id
+}
+
 output "data_factory_managed_private_endpoints_data_factory_id" {
   description = "Map of data_factory_id values across all data_factory_managed_private_endpoints, keyed the same as var.data_factory_managed_private_endpoints"
   value       = module.data_factory_managed_private_endpoints.data_factory_managed_private_endpoints_data_factory_id
@@ -2605,6 +2835,11 @@ output "data_factory_managed_private_endpoints_target_resource_id" {
 }
 
 # --- azurerm_data_factory_pipeline ---
+output "data_factory_pipelines_id" {
+  description = "Map of id values across all data_factory_pipelines, keyed the same as var.data_factory_pipelines"
+  value       = module.data_factory_pipelines.data_factory_pipelines_id
+}
+
 output "data_factory_pipelines_activities_json" {
   description = "Map of activities_json values across all data_factory_pipelines, keyed the same as var.data_factory_pipelines"
   value       = module.data_factory_pipelines.data_factory_pipelines_activities_json
@@ -2656,6 +2891,11 @@ output "data_factory_pipelines_variables" {
 }
 
 # --- azurerm_data_factory_trigger_blob_event ---
+output "data_factory_trigger_blob_events_id" {
+  description = "Map of id values across all data_factory_trigger_blob_events, keyed the same as var.data_factory_trigger_blob_events"
+  value       = module.data_factory_trigger_blob_events.data_factory_trigger_blob_events_id
+}
+
 output "data_factory_trigger_blob_events_activated" {
   description = "Map of activated values across all data_factory_trigger_blob_events, keyed the same as var.data_factory_trigger_blob_events"
   value       = module.data_factory_trigger_blob_events.data_factory_trigger_blob_events_activated
@@ -2717,6 +2957,11 @@ output "data_factory_trigger_blob_events_storage_account_id" {
 }
 
 # --- azurerm_data_factory_trigger_custom_event ---
+output "data_factory_trigger_custom_events_id" {
+  description = "Map of id values across all data_factory_trigger_custom_events, keyed the same as var.data_factory_trigger_custom_events"
+  value       = module.data_factory_trigger_custom_events.data_factory_trigger_custom_events_id
+}
+
 output "data_factory_trigger_custom_events_activated" {
   description = "Map of activated values across all data_factory_trigger_custom_events, keyed the same as var.data_factory_trigger_custom_events"
   value       = module.data_factory_trigger_custom_events.data_factory_trigger_custom_events_activated
@@ -2773,6 +3018,11 @@ output "data_factory_trigger_custom_events_subject_ends_with" {
 }
 
 # --- azurerm_data_factory_trigger_schedule ---
+output "data_factory_trigger_schedules_id" {
+  description = "Map of id values across all data_factory_trigger_schedules, keyed the same as var.data_factory_trigger_schedules"
+  value       = module.data_factory_trigger_schedules.data_factory_trigger_schedules_id
+}
+
 output "data_factory_trigger_schedules_activated" {
   description = "Map of activated values across all data_factory_trigger_schedules, keyed the same as var.data_factory_trigger_schedules"
   value       = module.data_factory_trigger_schedules.data_factory_trigger_schedules_activated
@@ -2844,6 +3094,11 @@ output "data_factory_trigger_schedules_time_zone" {
 }
 
 # --- azurerm_data_factory_trigger_tumbling_window ---
+output "data_factory_trigger_tumbling_windows_id" {
+  description = "Map of id values across all data_factory_trigger_tumbling_windows, keyed the same as var.data_factory_trigger_tumbling_windows"
+  value       = module.data_factory_trigger_tumbling_windows.data_factory_trigger_tumbling_windows_id
+}
+
 output "data_factory_trigger_tumbling_windows_activated" {
   description = "Map of activated values across all data_factory_trigger_tumbling_windows, keyed the same as var.data_factory_trigger_tumbling_windows"
   value       = module.data_factory_trigger_tumbling_windows.data_factory_trigger_tumbling_windows_activated
