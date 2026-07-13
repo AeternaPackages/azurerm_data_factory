@@ -718,14 +718,14 @@ EOT
     customer_managed_key_id          = optional(string)
     customer_managed_key_identity_id = optional(string)
     managed_virtual_network_enabled  = optional(bool)
-    public_network_enabled           = optional(bool) # Default: true
+    public_network_enabled           = optional(bool)
     purview_id                       = optional(string)
     tags                             = optional(map(string))
     github_configuration = optional(object({
       account_name       = string
       branch_name        = string
       git_url            = optional(string)
-      publishing_enabled = optional(bool) # Default: true
+      publishing_enabled = optional(bool)
       repository_name    = string
       root_folder        = string
     }))
@@ -742,7 +742,7 @@ EOT
       account_name       = string
       branch_name        = string
       project_name       = string
-      publishing_enabled = optional(bool) # Default: true
+      publishing_enabled = optional(bool)
       repository_name    = string
       root_folder        = string
       tenant_id          = string
@@ -865,8 +865,8 @@ EOT
       additional_properties    = optional(map(string))
       annotations              = optional(list(string))
       description              = optional(string)
-      dynamic_filename_enabled = optional(bool) # Default: false
-      dynamic_path_enabled     = optional(bool) # Default: false
+      dynamic_filename_enabled = optional(bool)
+      dynamic_path_enabled     = optional(bool)
       filename                 = optional(string)
       folder                   = optional(string)
       parameters               = optional(map(string))
@@ -903,9 +903,9 @@ EOT
       parameters            = optional(map(string))
       azure_blob_storage_location = optional(object({
         container                 = string
-        dynamic_container_enabled = optional(bool) # Default: false
-        dynamic_filename_enabled  = optional(bool) # Default: false
-        dynamic_path_enabled      = optional(bool) # Default: false
+        dynamic_container_enabled = optional(bool)
+        dynamic_filename_enabled  = optional(bool)
+        dynamic_path_enabled      = optional(bool)
         filename                  = optional(string)
         path                      = optional(string)
       }))
@@ -914,15 +914,15 @@ EOT
         type  = string
       }))
       http_server_location = optional(object({
-        dynamic_filename_enabled = optional(bool) # Default: false
-        dynamic_path_enabled     = optional(bool) # Default: false
+        dynamic_filename_enabled = optional(bool)
+        dynamic_path_enabled     = optional(bool)
         filename                 = string
         path                     = string
         relative_url             = string
       }))
       sftp_server_location = optional(object({
-        dynamic_filename_enabled = optional(bool) # Default: false
-        dynamic_path_enabled     = optional(bool) # Default: false
+        dynamic_filename_enabled = optional(bool)
+        dynamic_path_enabled     = optional(bool)
         filename                 = string
         path                     = string
       }))
@@ -947,37 +947,37 @@ EOT
       name                  = string
       additional_properties = optional(map(string))
       annotations           = optional(list(string))
-      column_delimiter      = optional(string) # Default: ","
+      column_delimiter      = optional(string)
       compression_codec     = optional(string)
       compression_level     = optional(string)
       description           = optional(string)
       encoding              = optional(string)
-      escape_character      = optional(string) # Default: "\\\\"
-      first_row_as_header   = optional(bool)   # Default: false
+      escape_character      = optional(string)
+      first_row_as_header   = optional(bool)
       folder                = optional(string)
-      null_value            = optional(string) # Default: ""
+      null_value            = optional(string)
       parameters            = optional(map(string))
-      quote_character       = optional(string) # Default: "\""
+      quote_character       = optional(string)
       row_delimiter         = optional(string)
       azure_blob_fs_location = optional(object({
-        dynamic_file_system_enabled = optional(bool) # Default: false
-        dynamic_filename_enabled    = optional(bool) # Default: false
-        dynamic_path_enabled        = optional(bool) # Default: false
+        dynamic_file_system_enabled = optional(bool)
+        dynamic_filename_enabled    = optional(bool)
+        dynamic_path_enabled        = optional(bool)
         file_system                 = optional(string)
         filename                    = optional(string)
         path                        = optional(string)
       }))
       azure_blob_storage_location = optional(object({
         container                 = string
-        dynamic_container_enabled = optional(bool) # Default: false
-        dynamic_filename_enabled  = optional(bool) # Default: false
-        dynamic_path_enabled      = optional(bool) # Default: false
+        dynamic_container_enabled = optional(bool)
+        dynamic_filename_enabled  = optional(bool)
+        dynamic_path_enabled      = optional(bool)
         filename                  = optional(string)
         path                      = optional(string)
       }))
       http_server_location = optional(object({
-        dynamic_filename_enabled = optional(bool) # Default: false
-        dynamic_path_enabled     = optional(bool) # Default: false
+        dynamic_filename_enabled = optional(bool)
+        dynamic_path_enabled     = optional(bool)
         filename                 = string
         path                     = string
         relative_url             = string
@@ -1016,15 +1016,15 @@ EOT
       parameters            = optional(map(string))
       azure_blob_storage_location = optional(object({
         container                 = string
-        dynamic_container_enabled = optional(bool) # Default: false
-        dynamic_filename_enabled  = optional(bool) # Default: false
-        dynamic_path_enabled      = optional(bool) # Default: false
+        dynamic_container_enabled = optional(bool)
+        dynamic_filename_enabled  = optional(bool)
+        dynamic_path_enabled      = optional(bool)
         filename                  = string
         path                      = string
       }))
       http_server_location = optional(object({
-        dynamic_filename_enabled = optional(bool) # Default: false
-        dynamic_path_enabled     = optional(bool) # Default: false
+        dynamic_filename_enabled = optional(bool)
+        dynamic_path_enabled     = optional(bool)
         filename                 = string
         path                     = string
         relative_url             = string
@@ -1061,24 +1061,24 @@ EOT
       folder                = optional(string)
       parameters            = optional(map(string))
       azure_blob_fs_location = optional(object({
-        dynamic_file_system_enabled = optional(bool) # Default: false
-        dynamic_filename_enabled    = optional(bool) # Default: false
-        dynamic_path_enabled        = optional(bool) # Default: false
+        dynamic_file_system_enabled = optional(bool)
+        dynamic_filename_enabled    = optional(bool)
+        dynamic_path_enabled        = optional(bool)
         file_system                 = optional(string)
         filename                    = optional(string)
         path                        = optional(string)
       }))
       azure_blob_storage_location = optional(object({
         container                 = string
-        dynamic_container_enabled = optional(bool) # Default: false
-        dynamic_filename_enabled  = optional(bool) # Default: false
-        dynamic_path_enabled      = optional(bool) # Default: false
+        dynamic_container_enabled = optional(bool)
+        dynamic_filename_enabled  = optional(bool)
+        dynamic_path_enabled      = optional(bool)
         filename                  = optional(string)
         path                      = optional(string)
       }))
       http_server_location = optional(object({
-        dynamic_filename_enabled = optional(bool) # Default: false
-        dynamic_path_enabled     = optional(bool) # Default: false
+        dynamic_filename_enabled = optional(bool)
+        dynamic_path_enabled     = optional(bool)
         filename                 = string
         path                     = optional(string)
         relative_url             = string
@@ -1214,12 +1214,12 @@ EOT
     data_factory_integration_runtime_azures = optional(map(object({
       location                                      = string
       name                                          = string
-      cleanup_enabled                               = optional(bool)   # Default: true
-      compute_type                                  = optional(string) # Default: "General"
-      core_count                                    = optional(number) # Default: 8
+      cleanup_enabled                               = optional(bool)
+      compute_type                                  = optional(string)
+      core_count                                    = optional(number)
       description                                   = optional(string)
       interactive_authoring_time_to_live_in_minutes = optional(number)
-      time_to_live_min                              = optional(number) # Default: 0
+      time_to_live_min                              = optional(number)
       virtual_network_enabled                       = optional(bool)
     })))
     data_factory_integration_runtime_azure_ssises = optional(map(object({
@@ -1228,10 +1228,10 @@ EOT
       node_size                        = string
       credential_name                  = optional(string)
       description                      = optional(string)
-      edition                          = optional(string) # Default: "Standard"
-      license_type                     = optional(string) # Default: "LicenseIncluded"
-      max_parallel_executions_per_node = optional(number) # Default: 1
-      number_of_nodes                  = optional(number) # Default: 1
+      edition                          = optional(string)
+      license_type                     = optional(string)
+      max_parallel_executions_per_node = optional(number)
+      number_of_nodes                  = optional(number)
       catalog_info = optional(object({
         administrator_login    = optional(string)
         administrator_password = optional(string)
@@ -1339,7 +1339,7 @@ EOT
       service_principal_key                   = optional(string)
       storage_kind                            = optional(string)
       tenant_id                               = optional(string)
-      use_managed_identity                    = optional(bool) # Default: false
+      use_managed_identity                    = optional(bool)
       key_vault_sas_token = optional(object({
         linked_service_name = string
         secret_name         = string
@@ -1371,7 +1371,7 @@ EOT
         cluster_version       = string
         instance_pool_id      = string
         max_number_of_workers = optional(number)
-        min_number_of_workers = optional(number) # Default: 1
+        min_number_of_workers = optional(number)
       }))
       key_vault_password = optional(object({
         linked_service_name = string
@@ -1384,7 +1384,7 @@ EOT
         init_scripts                = optional(list(string))
         log_destination             = optional(string)
         max_number_of_workers       = optional(number)
-        min_number_of_workers       = optional(number) # Default: 1
+        min_number_of_workers       = optional(number)
         node_type                   = string
         spark_config                = optional(map(string))
         spark_environment_variables = optional(map(string))
@@ -1449,7 +1449,7 @@ EOT
       service_principal_id     = optional(string)
       service_principal_key    = optional(string)
       tenant_id                = optional(string)
-      use_managed_identity     = optional(bool) # Default: false
+      use_managed_identity     = optional(bool)
       key_vault_connection_string = optional(object({
         linked_service_name = string
         secret_name         = string
@@ -1497,7 +1497,7 @@ EOT
       description                             = optional(string)
       integration_runtime_name                = optional(string)
       parameters                              = optional(map(string))
-      server_version_is_32_or_higher          = optional(bool) # Default: false
+      server_version_is_32_or_higher          = optional(bool)
     })))
     data_factory_linked_service_data_lake_storage_gen2s = optional(map(object({
       name                                        = string
@@ -1515,7 +1515,7 @@ EOT
       storage_account_key_key_vault_id            = optional(string)
       storage_account_key_key_vault_secret_name   = optional(string)
       tenant                                      = optional(string)
-      use_managed_identity                        = optional(bool) # Default: false
+      use_managed_identity                        = optional(bool)
     })))
     data_factory_linked_service_key_vaults = optional(map(object({
       key_vault_id             = string
@@ -1540,7 +1540,7 @@ EOT
       service_principal_key_key_vault_id          = optional(string)
       service_principal_key_key_vault_secret_name = optional(string)
       tenant                                      = optional(string)
-      use_managed_identity                        = optional(bool) # Default: false
+      use_managed_identity                        = optional(bool)
     })))
     data_factory_linked_service_mysqls = optional(map(object({
       connection_string        = string
@@ -1548,7 +1548,7 @@ EOT
       additional_properties    = optional(map(string))
       annotations              = optional(list(string))
       description              = optional(string)
-      driver_version           = optional(string) # Default: "V1"
+      driver_version           = optional(string)
       integration_runtime_name = optional(string)
       parameters               = optional(map(string))
     })))
@@ -1725,7 +1725,7 @@ EOT
       events                = set(string)
       name                  = string
       storage_account_id    = string
-      activated             = optional(bool) # Default: true
+      activated             = optional(bool)
       additional_properties = optional(map(string))
       annotations           = optional(list(string))
       blob_path_begins_with = optional(string)
@@ -1741,7 +1741,7 @@ EOT
       eventgrid_topic_id    = string
       events                = set(string)
       name                  = string
-      activated             = optional(bool) # Default: true
+      activated             = optional(bool)
       additional_properties = optional(map(string))
       annotations           = optional(list(string))
       description           = optional(string)
@@ -1754,12 +1754,12 @@ EOT
     })))
     data_factory_trigger_schedules = optional(map(object({
       name                = string
-      activated           = optional(bool) # Default: true
+      activated           = optional(bool)
       annotations         = optional(list(string))
       description         = optional(string)
       end_time            = optional(string)
-      frequency           = optional(string) # Default: "Minute"
-      interval            = optional(number) # Default: 1
+      frequency           = optional(string)
+      interval            = optional(number)
       pipeline_name       = optional(string)
       pipeline_parameters = optional(map(string))
       start_time          = optional(string)
@@ -1784,20 +1784,20 @@ EOT
       interval              = number
       name                  = string
       start_time            = string
-      activated             = optional(bool) # Default: true
+      activated             = optional(bool)
       additional_properties = optional(map(string))
       annotations           = optional(list(string))
       delay                 = optional(string)
       description           = optional(string)
       end_time              = optional(string)
-      max_concurrency       = optional(number) # Default: 50
+      max_concurrency       = optional(number)
       pipeline = object({
         name       = string
         parameters = optional(map(string))
       })
       retry = optional(object({
         count    = number
-        interval = optional(number) # Default: 30
+        interval = optional(number)
       }))
       trigger_dependency = optional(list(object({
         offset       = optional(string)
