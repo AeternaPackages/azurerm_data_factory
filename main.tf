@@ -172,9 +172,9 @@ locals {
     }
   ]...)
 
-  data_factory_integration_runtime_azure_ssises = merge([
+  data_factory_integration_runtime_azure_ssis = merge([
     for k1, v1 in var.data_factories : {
-      for k2, v2 in coalesce(v1.data_factory_integration_runtime_azure_ssises, {}) :
+      for k2, v2 in coalesce(v1.data_factory_integration_runtime_azure_ssis, {}) :
       "${k1}/${k2}" => merge(v2, {
         data_factory_id = module.data_factories.data_factories_id["${k1}"]
       })
@@ -208,9 +208,9 @@ locals {
     }
   ]...)
 
-  data_factory_linked_service_azure_databrickses = merge([
+  data_factory_linked_service_azure_databricks = merge([
     for k1, v1 in var.data_factories : {
-      for k2, v2 in coalesce(v1.data_factory_linked_service_azure_databrickses, {}) :
+      for k2, v2 in coalesce(v1.data_factory_linked_service_azure_databricks, {}) :
       "${k1}/${k2}" => merge(v2, {
         data_factory_id = module.data_factories.data_factories_id["${k1}"]
       })
@@ -316,9 +316,9 @@ locals {
     }
   ]...)
 
-  data_factory_linked_service_odatas = merge([
+  data_factory_linked_service_odata = merge([
     for k1, v1 in var.data_factories : {
-      for k2, v2 in coalesce(v1.data_factory_linked_service_odatas, {}) :
+      for k2, v2 in coalesce(v1.data_factory_linked_service_odata, {}) :
       "${k1}/${k2}" => merge(v2, {
         data_factory_id = module.data_factories.data_factories_id["${k1}"]
       })
@@ -571,10 +571,10 @@ module "data_factory_integration_runtime_azures" {
   depends_on                              = [module.data_factories]
 }
 
-module "data_factory_integration_runtime_azure_ssises" {
-  source                                        = "git::https://github.com/AeternaModules/azurerm_data_factory_integration_runtime_azure_ssis.git?ref=v4.80.0"
-  data_factory_integration_runtime_azure_ssises = local.data_factory_integration_runtime_azure_ssises
-  depends_on                                    = [module.data_factories]
+module "data_factory_integration_runtime_azure_ssis" {
+  source                                      = "git::https://github.com/AeternaModules/azurerm_data_factory_integration_runtime_azure_ssis.git?ref=v4.80.0"
+  data_factory_integration_runtime_azure_ssis = local.data_factory_integration_runtime_azure_ssis
+  depends_on                                  = [module.data_factories]
 }
 
 module "data_factory_integration_runtime_self_hosteds" {
@@ -595,10 +595,10 @@ module "data_factory_linked_service_azure_blob_storages" {
   depends_on                                      = [module.data_factories]
 }
 
-module "data_factory_linked_service_azure_databrickses" {
-  source                                         = "git::https://github.com/AeternaModules/azurerm_data_factory_linked_service_azure_databricks.git?ref=v4.80.0"
-  data_factory_linked_service_azure_databrickses = local.data_factory_linked_service_azure_databrickses
-  depends_on                                     = [module.data_factories]
+module "data_factory_linked_service_azure_databricks" {
+  source                                       = "git::https://github.com/AeternaModules/azurerm_data_factory_linked_service_azure_databricks.git?ref=v4.80.0"
+  data_factory_linked_service_azure_databricks = local.data_factory_linked_service_azure_databricks
+  depends_on                                   = [module.data_factories]
 }
 
 module "data_factory_linked_service_azure_file_storages" {
@@ -667,10 +667,10 @@ module "data_factory_linked_service_mysqls" {
   depends_on                         = [module.data_factories]
 }
 
-module "data_factory_linked_service_odatas" {
-  source                             = "git::https://github.com/AeternaModules/azurerm_data_factory_linked_service_odata.git?ref=v4.80.0"
-  data_factory_linked_service_odatas = local.data_factory_linked_service_odatas
-  depends_on                         = [module.data_factories]
+module "data_factory_linked_service_odata" {
+  source                            = "git::https://github.com/AeternaModules/azurerm_data_factory_linked_service_odata.git?ref=v4.80.0"
+  data_factory_linked_service_odata = local.data_factory_linked_service_odata
+  depends_on                        = [module.data_factories]
 }
 
 module "data_factory_linked_service_odbcs" {

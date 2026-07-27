@@ -256,7 +256,7 @@ Nested data_factory_integration_runtime_azures (azurerm_data_factory_integration
         - interactive_authoring_time_to_live_in_minutes
         - time_to_live_min
         - virtual_network_enabled
-Nested data_factory_integration_runtime_azure_ssises (azurerm_data_factory_integration_runtime_azure_ssis):
+Nested data_factory_integration_runtime_azure_ssis (azurerm_data_factory_integration_runtime_azure_ssis):
     Required:
         - location
         - name
@@ -322,7 +322,7 @@ Nested data_factory_linked_service_azure_blob_storages (azurerm_data_factory_lin
         - key_vault_sas_token (block)
         - sas_token_linked_key_vault_key (block)
         - service_principal_linked_key_vault_key (block)
-Nested data_factory_linked_service_azure_databrickses (azurerm_data_factory_linked_service_azure_databricks):
+Nested data_factory_linked_service_azure_databricks (azurerm_data_factory_linked_service_azure_databricks):
     Required:
         - adb_domain
         - name
@@ -502,7 +502,7 @@ Nested data_factory_linked_service_mysqls (azurerm_data_factory_linked_service_m
         - driver_version
         - integration_runtime_name
         - parameters
-Nested data_factory_linked_service_odatas (azurerm_data_factory_linked_service_odata):
+Nested data_factory_linked_service_odata (azurerm_data_factory_linked_service_odata):
     Required:
         - name
         - url
@@ -1222,7 +1222,7 @@ EOT
       time_to_live_min                              = optional(number)
       virtual_network_enabled                       = optional(bool)
     })))
-    data_factory_integration_runtime_azure_ssises = optional(map(object({
+    data_factory_integration_runtime_azure_ssis = optional(map(object({
       location                         = string
       name                             = string
       node_size                        = string
@@ -1353,7 +1353,7 @@ EOT
         secret_name         = string
       }))
     })))
-    data_factory_linked_service_azure_databrickses = optional(map(object({
+    data_factory_linked_service_azure_databricks = optional(map(object({
       adb_domain                         = string
       name                               = string
       access_token                       = optional(string)
@@ -1552,7 +1552,7 @@ EOT
       integration_runtime_name = optional(string)
       parameters               = optional(map(string))
     })))
-    data_factory_linked_service_odatas = optional(map(object({
+    data_factory_linked_service_odata = optional(map(object({
       name                     = string
       url                      = string
       additional_properties    = optional(map(string))
@@ -1829,11 +1829,11 @@ EOT
       flatten([for k0, v0 in var.data_factories : [for kk in keys(coalesce(v0.data_factory_dataset_sql_server_tables, {})) : !strcontains(kk, "/")]]),
       flatten([for k0, v0 in var.data_factories : [for kk in keys(coalesce(v0.data_factory_flowlet_data_flows, {})) : !strcontains(kk, "/")]]),
       flatten([for k0, v0 in var.data_factories : [for kk in keys(coalesce(v0.data_factory_integration_runtime_azures, {})) : !strcontains(kk, "/")]]),
-      flatten([for k0, v0 in var.data_factories : [for kk in keys(coalesce(v0.data_factory_integration_runtime_azure_ssises, {})) : !strcontains(kk, "/")]]),
+      flatten([for k0, v0 in var.data_factories : [for kk in keys(coalesce(v0.data_factory_integration_runtime_azure_ssis, {})) : !strcontains(kk, "/")]]),
       flatten([for k0, v0 in var.data_factories : [for kk in keys(coalesce(v0.data_factory_integration_runtime_self_hosteds, {})) : !strcontains(kk, "/")]]),
       flatten([for k0, v0 in var.data_factories : [for kk in keys(coalesce(v0.data_factory_linked_custom_services, {})) : !strcontains(kk, "/")]]),
       flatten([for k0, v0 in var.data_factories : [for kk in keys(coalesce(v0.data_factory_linked_service_azure_blob_storages, {})) : !strcontains(kk, "/")]]),
-      flatten([for k0, v0 in var.data_factories : [for kk in keys(coalesce(v0.data_factory_linked_service_azure_databrickses, {})) : !strcontains(kk, "/")]]),
+      flatten([for k0, v0 in var.data_factories : [for kk in keys(coalesce(v0.data_factory_linked_service_azure_databricks, {})) : !strcontains(kk, "/")]]),
       flatten([for k0, v0 in var.data_factories : [for kk in keys(coalesce(v0.data_factory_linked_service_azure_file_storages, {})) : !strcontains(kk, "/")]]),
       flatten([for k0, v0 in var.data_factories : [for kk in keys(coalesce(v0.data_factory_linked_service_azure_functions, {})) : !strcontains(kk, "/")]]),
       flatten([for k0, v0 in var.data_factories : [for kk in keys(coalesce(v0.data_factory_linked_service_azure_searches, {})) : !strcontains(kk, "/")]]),
@@ -1845,7 +1845,7 @@ EOT
       flatten([for k0, v0 in var.data_factories : [for kk in keys(coalesce(v0.data_factory_linked_service_key_vaults, {})) : !strcontains(kk, "/")]]),
       flatten([for k0, v0 in var.data_factories : [for kk in keys(coalesce(v0.data_factory_linked_service_kustos, {})) : !strcontains(kk, "/")]]),
       flatten([for k0, v0 in var.data_factories : [for kk in keys(coalesce(v0.data_factory_linked_service_mysqls, {})) : !strcontains(kk, "/")]]),
-      flatten([for k0, v0 in var.data_factories : [for kk in keys(coalesce(v0.data_factory_linked_service_odatas, {})) : !strcontains(kk, "/")]]),
+      flatten([for k0, v0 in var.data_factories : [for kk in keys(coalesce(v0.data_factory_linked_service_odata, {})) : !strcontains(kk, "/")]]),
       flatten([for k0, v0 in var.data_factories : [for kk in keys(coalesce(v0.data_factory_linked_service_odbcs, {})) : !strcontains(kk, "/")]]),
       flatten([for k0, v0 in var.data_factories : [for kk in keys(coalesce(v0.data_factory_linked_service_postgresqls, {})) : !strcontains(kk, "/")]]),
       flatten([for k0, v0 in var.data_factories : [for kk in keys(coalesce(v0.data_factory_linked_service_sftps, {})) : !strcontains(kk, "/")]]),

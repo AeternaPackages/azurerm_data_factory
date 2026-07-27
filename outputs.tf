@@ -1194,107 +1194,107 @@ output "data_factory_integration_runtime_azures_virtual_network_enabled" {
 }
 
 # --- azurerm_data_factory_integration_runtime_azure_ssis ---
-output "data_factory_integration_runtime_azure_ssises_id" {
-  description = "Map of id values across all data_factory_integration_runtime_azure_ssises, keyed the same as var.data_factory_integration_runtime_azure_ssises"
-  value       = module.data_factory_integration_runtime_azure_ssises.data_factory_integration_runtime_azure_ssises_id
+output "data_factory_integration_runtime_azure_ssis_id" {
+  description = "Map of id values across all data_factory_integration_runtime_azure_ssis, keyed the same as var.data_factory_integration_runtime_azure_ssis"
+  value       = module.data_factory_integration_runtime_azure_ssis.data_factory_integration_runtime_azure_ssis_id
 }
 
-output "data_factory_integration_runtime_azure_ssises_catalog_info" {
-  description = "Map of catalog_info values across all data_factory_integration_runtime_azure_ssises, keyed the same as var.data_factory_integration_runtime_azure_ssises"
-  value       = module.data_factory_integration_runtime_azure_ssises.data_factory_integration_runtime_azure_ssises_catalog_info
+output "data_factory_integration_runtime_azure_ssis_catalog_info" {
+  description = "Map of catalog_info values across all data_factory_integration_runtime_azure_ssis, keyed the same as var.data_factory_integration_runtime_azure_ssis"
+  value       = module.data_factory_integration_runtime_azure_ssis.data_factory_integration_runtime_azure_ssis_catalog_info
   sensitive   = true
 }
 
-output "data_factory_integration_runtime_azure_ssises_copy_compute_scale" {
-  description = "Map of copy_compute_scale values across all data_factory_integration_runtime_azure_ssises, keyed the same as var.data_factory_integration_runtime_azure_ssises"
-  value       = module.data_factory_integration_runtime_azure_ssises.data_factory_integration_runtime_azure_ssises_copy_compute_scale
+output "data_factory_integration_runtime_azure_ssis_copy_compute_scale" {
+  description = "Map of copy_compute_scale values across all data_factory_integration_runtime_azure_ssis, keyed the same as var.data_factory_integration_runtime_azure_ssis"
+  value       = module.data_factory_integration_runtime_azure_ssis.data_factory_integration_runtime_azure_ssis_copy_compute_scale
 }
 
-output "data_factory_integration_runtime_azure_ssises_credential_name" {
-  description = "Map of credential_name values across all data_factory_integration_runtime_azure_ssises, keyed the same as var.data_factory_integration_runtime_azure_ssises"
-  value       = module.data_factory_integration_runtime_azure_ssises.data_factory_integration_runtime_azure_ssises_credential_name
+output "data_factory_integration_runtime_azure_ssis_credential_name" {
+  description = "Map of credential_name values across all data_factory_integration_runtime_azure_ssis, keyed the same as var.data_factory_integration_runtime_azure_ssis"
+  value       = module.data_factory_integration_runtime_azure_ssis.data_factory_integration_runtime_azure_ssis_credential_name
 }
 
-output "data_factory_integration_runtime_azure_ssises_custom_setup_script" {
-  description = "Map of custom_setup_script values across all data_factory_integration_runtime_azure_ssises, keyed the same as var.data_factory_integration_runtime_azure_ssises"
-  value       = module.data_factory_integration_runtime_azure_ssises.data_factory_integration_runtime_azure_ssises_custom_setup_script
+output "data_factory_integration_runtime_azure_ssis_custom_setup_script" {
+  description = "Map of custom_setup_script values across all data_factory_integration_runtime_azure_ssis, keyed the same as var.data_factory_integration_runtime_azure_ssis"
+  value       = module.data_factory_integration_runtime_azure_ssis.data_factory_integration_runtime_azure_ssis_custom_setup_script
   sensitive   = true
 }
 
-output "data_factory_integration_runtime_azure_ssises_data_factory_id" {
-  description = "Map of data_factory_id values across all data_factory_integration_runtime_azure_ssises, keyed the same as var.data_factory_integration_runtime_azure_ssises"
-  value       = module.data_factory_integration_runtime_azure_ssises.data_factory_integration_runtime_azure_ssises_data_factory_id
+output "data_factory_integration_runtime_azure_ssis_data_factory_id" {
+  description = "Map of data_factory_id values across all data_factory_integration_runtime_azure_ssis, keyed the same as var.data_factory_integration_runtime_azure_ssis"
+  value       = module.data_factory_integration_runtime_azure_ssis.data_factory_integration_runtime_azure_ssis_data_factory_id
 }
 
-output "data_factory_integration_runtime_azure_ssises_description" {
-  description = "Map of description values across all data_factory_integration_runtime_azure_ssises, keyed the same as var.data_factory_integration_runtime_azure_ssises"
-  value       = module.data_factory_integration_runtime_azure_ssises.data_factory_integration_runtime_azure_ssises_description
+output "data_factory_integration_runtime_azure_ssis_description" {
+  description = "Map of description values across all data_factory_integration_runtime_azure_ssis, keyed the same as var.data_factory_integration_runtime_azure_ssis"
+  value       = module.data_factory_integration_runtime_azure_ssis.data_factory_integration_runtime_azure_ssis_description
 }
 
-output "data_factory_integration_runtime_azure_ssises_edition" {
-  description = "Map of edition values across all data_factory_integration_runtime_azure_ssises, keyed the same as var.data_factory_integration_runtime_azure_ssises"
-  value       = module.data_factory_integration_runtime_azure_ssises.data_factory_integration_runtime_azure_ssises_edition
+output "data_factory_integration_runtime_azure_ssis_edition" {
+  description = "Map of edition values across all data_factory_integration_runtime_azure_ssis, keyed the same as var.data_factory_integration_runtime_azure_ssis"
+  value       = module.data_factory_integration_runtime_azure_ssis.data_factory_integration_runtime_azure_ssis_edition
 }
 
-output "data_factory_integration_runtime_azure_ssises_express_custom_setup" {
-  description = "Map of express_custom_setup values across all data_factory_integration_runtime_azure_ssises, keyed the same as var.data_factory_integration_runtime_azure_ssises"
-  value       = module.data_factory_integration_runtime_azure_ssises.data_factory_integration_runtime_azure_ssises_express_custom_setup
+output "data_factory_integration_runtime_azure_ssis_express_custom_setup" {
+  description = "Map of express_custom_setup values across all data_factory_integration_runtime_azure_ssis, keyed the same as var.data_factory_integration_runtime_azure_ssis"
+  value       = module.data_factory_integration_runtime_azure_ssis.data_factory_integration_runtime_azure_ssis_express_custom_setup
   sensitive   = true
 }
 
-output "data_factory_integration_runtime_azure_ssises_express_vnet_integration" {
-  description = "Map of express_vnet_integration values across all data_factory_integration_runtime_azure_ssises, keyed the same as var.data_factory_integration_runtime_azure_ssises"
-  value       = module.data_factory_integration_runtime_azure_ssises.data_factory_integration_runtime_azure_ssises_express_vnet_integration
+output "data_factory_integration_runtime_azure_ssis_express_vnet_integration" {
+  description = "Map of express_vnet_integration values across all data_factory_integration_runtime_azure_ssis, keyed the same as var.data_factory_integration_runtime_azure_ssis"
+  value       = module.data_factory_integration_runtime_azure_ssis.data_factory_integration_runtime_azure_ssis_express_vnet_integration
 }
 
-output "data_factory_integration_runtime_azure_ssises_license_type" {
-  description = "Map of license_type values across all data_factory_integration_runtime_azure_ssises, keyed the same as var.data_factory_integration_runtime_azure_ssises"
-  value       = module.data_factory_integration_runtime_azure_ssises.data_factory_integration_runtime_azure_ssises_license_type
+output "data_factory_integration_runtime_azure_ssis_license_type" {
+  description = "Map of license_type values across all data_factory_integration_runtime_azure_ssis, keyed the same as var.data_factory_integration_runtime_azure_ssis"
+  value       = module.data_factory_integration_runtime_azure_ssis.data_factory_integration_runtime_azure_ssis_license_type
 }
 
-output "data_factory_integration_runtime_azure_ssises_location" {
-  description = "Map of location values across all data_factory_integration_runtime_azure_ssises, keyed the same as var.data_factory_integration_runtime_azure_ssises"
-  value       = module.data_factory_integration_runtime_azure_ssises.data_factory_integration_runtime_azure_ssises_location
+output "data_factory_integration_runtime_azure_ssis_location" {
+  description = "Map of location values across all data_factory_integration_runtime_azure_ssis, keyed the same as var.data_factory_integration_runtime_azure_ssis"
+  value       = module.data_factory_integration_runtime_azure_ssis.data_factory_integration_runtime_azure_ssis_location
 }
 
-output "data_factory_integration_runtime_azure_ssises_max_parallel_executions_per_node" {
-  description = "Map of max_parallel_executions_per_node values across all data_factory_integration_runtime_azure_ssises, keyed the same as var.data_factory_integration_runtime_azure_ssises"
-  value       = module.data_factory_integration_runtime_azure_ssises.data_factory_integration_runtime_azure_ssises_max_parallel_executions_per_node
+output "data_factory_integration_runtime_azure_ssis_max_parallel_executions_per_node" {
+  description = "Map of max_parallel_executions_per_node values across all data_factory_integration_runtime_azure_ssis, keyed the same as var.data_factory_integration_runtime_azure_ssis"
+  value       = module.data_factory_integration_runtime_azure_ssis.data_factory_integration_runtime_azure_ssis_max_parallel_executions_per_node
 }
 
-output "data_factory_integration_runtime_azure_ssises_name" {
-  description = "Map of name values across all data_factory_integration_runtime_azure_ssises, keyed the same as var.data_factory_integration_runtime_azure_ssises"
-  value       = module.data_factory_integration_runtime_azure_ssises.data_factory_integration_runtime_azure_ssises_name
+output "data_factory_integration_runtime_azure_ssis_name" {
+  description = "Map of name values across all data_factory_integration_runtime_azure_ssis, keyed the same as var.data_factory_integration_runtime_azure_ssis"
+  value       = module.data_factory_integration_runtime_azure_ssis.data_factory_integration_runtime_azure_ssis_name
 }
 
-output "data_factory_integration_runtime_azure_ssises_node_size" {
-  description = "Map of node_size values across all data_factory_integration_runtime_azure_ssises, keyed the same as var.data_factory_integration_runtime_azure_ssises"
-  value       = module.data_factory_integration_runtime_azure_ssises.data_factory_integration_runtime_azure_ssises_node_size
+output "data_factory_integration_runtime_azure_ssis_node_size" {
+  description = "Map of node_size values across all data_factory_integration_runtime_azure_ssis, keyed the same as var.data_factory_integration_runtime_azure_ssis"
+  value       = module.data_factory_integration_runtime_azure_ssis.data_factory_integration_runtime_azure_ssis_node_size
 }
 
-output "data_factory_integration_runtime_azure_ssises_number_of_nodes" {
-  description = "Map of number_of_nodes values across all data_factory_integration_runtime_azure_ssises, keyed the same as var.data_factory_integration_runtime_azure_ssises"
-  value       = module.data_factory_integration_runtime_azure_ssises.data_factory_integration_runtime_azure_ssises_number_of_nodes
+output "data_factory_integration_runtime_azure_ssis_number_of_nodes" {
+  description = "Map of number_of_nodes values across all data_factory_integration_runtime_azure_ssis, keyed the same as var.data_factory_integration_runtime_azure_ssis"
+  value       = module.data_factory_integration_runtime_azure_ssis.data_factory_integration_runtime_azure_ssis_number_of_nodes
 }
 
-output "data_factory_integration_runtime_azure_ssises_package_store" {
-  description = "Map of package_store values across all data_factory_integration_runtime_azure_ssises, keyed the same as var.data_factory_integration_runtime_azure_ssises"
-  value       = module.data_factory_integration_runtime_azure_ssises.data_factory_integration_runtime_azure_ssises_package_store
+output "data_factory_integration_runtime_azure_ssis_package_store" {
+  description = "Map of package_store values across all data_factory_integration_runtime_azure_ssis, keyed the same as var.data_factory_integration_runtime_azure_ssis"
+  value       = module.data_factory_integration_runtime_azure_ssis.data_factory_integration_runtime_azure_ssis_package_store
 }
 
-output "data_factory_integration_runtime_azure_ssises_pipeline_external_compute_scale" {
-  description = "Map of pipeline_external_compute_scale values across all data_factory_integration_runtime_azure_ssises, keyed the same as var.data_factory_integration_runtime_azure_ssises"
-  value       = module.data_factory_integration_runtime_azure_ssises.data_factory_integration_runtime_azure_ssises_pipeline_external_compute_scale
+output "data_factory_integration_runtime_azure_ssis_pipeline_external_compute_scale" {
+  description = "Map of pipeline_external_compute_scale values across all data_factory_integration_runtime_azure_ssis, keyed the same as var.data_factory_integration_runtime_azure_ssis"
+  value       = module.data_factory_integration_runtime_azure_ssis.data_factory_integration_runtime_azure_ssis_pipeline_external_compute_scale
 }
 
-output "data_factory_integration_runtime_azure_ssises_proxy" {
-  description = "Map of proxy values across all data_factory_integration_runtime_azure_ssises, keyed the same as var.data_factory_integration_runtime_azure_ssises"
-  value       = module.data_factory_integration_runtime_azure_ssises.data_factory_integration_runtime_azure_ssises_proxy
+output "data_factory_integration_runtime_azure_ssis_proxy" {
+  description = "Map of proxy values across all data_factory_integration_runtime_azure_ssis, keyed the same as var.data_factory_integration_runtime_azure_ssis"
+  value       = module.data_factory_integration_runtime_azure_ssis.data_factory_integration_runtime_azure_ssis_proxy
 }
 
-output "data_factory_integration_runtime_azure_ssises_vnet_integration" {
-  description = "Map of vnet_integration values across all data_factory_integration_runtime_azure_ssises, keyed the same as var.data_factory_integration_runtime_azure_ssises"
-  value       = module.data_factory_integration_runtime_azure_ssises.data_factory_integration_runtime_azure_ssises_vnet_integration
+output "data_factory_integration_runtime_azure_ssis_vnet_integration" {
+  description = "Map of vnet_integration values across all data_factory_integration_runtime_azure_ssis, keyed the same as var.data_factory_integration_runtime_azure_ssis"
+  value       = module.data_factory_integration_runtime_azure_ssis.data_factory_integration_runtime_azure_ssis_vnet_integration
 }
 
 # --- azurerm_data_factory_integration_runtime_self_hosted ---
@@ -1494,85 +1494,85 @@ output "data_factory_linked_service_azure_blob_storages_use_managed_identity" {
 }
 
 # --- azurerm_data_factory_linked_service_azure_databricks ---
-output "data_factory_linked_service_azure_databrickses_id" {
-  description = "Map of id values across all data_factory_linked_service_azure_databrickses, keyed the same as var.data_factory_linked_service_azure_databrickses"
-  value       = module.data_factory_linked_service_azure_databrickses.data_factory_linked_service_azure_databrickses_id
+output "data_factory_linked_service_azure_databricks_id" {
+  description = "Map of id values across all data_factory_linked_service_azure_databricks, keyed the same as var.data_factory_linked_service_azure_databricks"
+  value       = module.data_factory_linked_service_azure_databricks.data_factory_linked_service_azure_databricks_id
 }
 
-output "data_factory_linked_service_azure_databrickses_access_token" {
-  description = "Map of access_token values across all data_factory_linked_service_azure_databrickses, keyed the same as var.data_factory_linked_service_azure_databrickses"
-  value       = module.data_factory_linked_service_azure_databrickses.data_factory_linked_service_azure_databrickses_access_token
+output "data_factory_linked_service_azure_databricks_access_token" {
+  description = "Map of access_token values across all data_factory_linked_service_azure_databricks, keyed the same as var.data_factory_linked_service_azure_databricks"
+  value       = module.data_factory_linked_service_azure_databricks.data_factory_linked_service_azure_databricks_access_token
   sensitive   = true
 }
 
-output "data_factory_linked_service_azure_databrickses_adb_domain" {
-  description = "Map of adb_domain values across all data_factory_linked_service_azure_databrickses, keyed the same as var.data_factory_linked_service_azure_databrickses"
-  value       = module.data_factory_linked_service_azure_databrickses.data_factory_linked_service_azure_databrickses_adb_domain
+output "data_factory_linked_service_azure_databricks_adb_domain" {
+  description = "Map of adb_domain values across all data_factory_linked_service_azure_databricks, keyed the same as var.data_factory_linked_service_azure_databricks"
+  value       = module.data_factory_linked_service_azure_databricks.data_factory_linked_service_azure_databricks_adb_domain
 }
 
-output "data_factory_linked_service_azure_databrickses_additional_properties" {
-  description = "Map of additional_properties values across all data_factory_linked_service_azure_databrickses, keyed the same as var.data_factory_linked_service_azure_databrickses"
-  value       = module.data_factory_linked_service_azure_databrickses.data_factory_linked_service_azure_databrickses_additional_properties
+output "data_factory_linked_service_azure_databricks_additional_properties" {
+  description = "Map of additional_properties values across all data_factory_linked_service_azure_databricks, keyed the same as var.data_factory_linked_service_azure_databricks"
+  value       = module.data_factory_linked_service_azure_databricks.data_factory_linked_service_azure_databricks_additional_properties
 }
 
-output "data_factory_linked_service_azure_databrickses_annotations" {
-  description = "Map of annotations values across all data_factory_linked_service_azure_databrickses, keyed the same as var.data_factory_linked_service_azure_databrickses"
-  value       = module.data_factory_linked_service_azure_databrickses.data_factory_linked_service_azure_databrickses_annotations
+output "data_factory_linked_service_azure_databricks_annotations" {
+  description = "Map of annotations values across all data_factory_linked_service_azure_databricks, keyed the same as var.data_factory_linked_service_azure_databricks"
+  value       = module.data_factory_linked_service_azure_databricks.data_factory_linked_service_azure_databricks_annotations
 }
 
-output "data_factory_linked_service_azure_databrickses_data_factory_id" {
-  description = "Map of data_factory_id values across all data_factory_linked_service_azure_databrickses, keyed the same as var.data_factory_linked_service_azure_databrickses"
-  value       = module.data_factory_linked_service_azure_databrickses.data_factory_linked_service_azure_databrickses_data_factory_id
+output "data_factory_linked_service_azure_databricks_data_factory_id" {
+  description = "Map of data_factory_id values across all data_factory_linked_service_azure_databricks, keyed the same as var.data_factory_linked_service_azure_databricks"
+  value       = module.data_factory_linked_service_azure_databricks.data_factory_linked_service_azure_databricks_data_factory_id
 }
 
-output "data_factory_linked_service_azure_databrickses_description" {
-  description = "Map of description values across all data_factory_linked_service_azure_databrickses, keyed the same as var.data_factory_linked_service_azure_databrickses"
-  value       = module.data_factory_linked_service_azure_databrickses.data_factory_linked_service_azure_databrickses_description
+output "data_factory_linked_service_azure_databricks_description" {
+  description = "Map of description values across all data_factory_linked_service_azure_databricks, keyed the same as var.data_factory_linked_service_azure_databricks"
+  value       = module.data_factory_linked_service_azure_databricks.data_factory_linked_service_azure_databricks_description
 }
 
-output "data_factory_linked_service_azure_databrickses_existing_cluster_id" {
-  description = "Map of existing_cluster_id values across all data_factory_linked_service_azure_databrickses, keyed the same as var.data_factory_linked_service_azure_databrickses"
-  value       = module.data_factory_linked_service_azure_databrickses.data_factory_linked_service_azure_databrickses_existing_cluster_id
+output "data_factory_linked_service_azure_databricks_existing_cluster_id" {
+  description = "Map of existing_cluster_id values across all data_factory_linked_service_azure_databricks, keyed the same as var.data_factory_linked_service_azure_databricks"
+  value       = module.data_factory_linked_service_azure_databricks.data_factory_linked_service_azure_databricks_existing_cluster_id
 }
 
-output "data_factory_linked_service_azure_databrickses_instance_pool" {
-  description = "Map of instance_pool values across all data_factory_linked_service_azure_databrickses, keyed the same as var.data_factory_linked_service_azure_databrickses"
-  value       = module.data_factory_linked_service_azure_databrickses.data_factory_linked_service_azure_databrickses_instance_pool
+output "data_factory_linked_service_azure_databricks_instance_pool" {
+  description = "Map of instance_pool values across all data_factory_linked_service_azure_databricks, keyed the same as var.data_factory_linked_service_azure_databricks"
+  value       = module.data_factory_linked_service_azure_databricks.data_factory_linked_service_azure_databricks_instance_pool
 }
 
-output "data_factory_linked_service_azure_databrickses_integration_runtime_name" {
-  description = "Map of integration_runtime_name values across all data_factory_linked_service_azure_databrickses, keyed the same as var.data_factory_linked_service_azure_databrickses"
-  value       = module.data_factory_linked_service_azure_databrickses.data_factory_linked_service_azure_databrickses_integration_runtime_name
+output "data_factory_linked_service_azure_databricks_integration_runtime_name" {
+  description = "Map of integration_runtime_name values across all data_factory_linked_service_azure_databricks, keyed the same as var.data_factory_linked_service_azure_databricks"
+  value       = module.data_factory_linked_service_azure_databricks.data_factory_linked_service_azure_databricks_integration_runtime_name
 }
 
-output "data_factory_linked_service_azure_databrickses_key_vault_password" {
-  description = "Map of key_vault_password values across all data_factory_linked_service_azure_databrickses, keyed the same as var.data_factory_linked_service_azure_databrickses"
-  value       = module.data_factory_linked_service_azure_databrickses.data_factory_linked_service_azure_databrickses_key_vault_password
+output "data_factory_linked_service_azure_databricks_key_vault_password" {
+  description = "Map of key_vault_password values across all data_factory_linked_service_azure_databricks, keyed the same as var.data_factory_linked_service_azure_databricks"
+  value       = module.data_factory_linked_service_azure_databricks.data_factory_linked_service_azure_databricks_key_vault_password
 }
 
-output "data_factory_linked_service_azure_databrickses_msi_work_space_resource_id" {
-  description = "Map of msi_work_space_resource_id values across all data_factory_linked_service_azure_databrickses, keyed the same as var.data_factory_linked_service_azure_databrickses"
-  value       = module.data_factory_linked_service_azure_databrickses.data_factory_linked_service_azure_databrickses_msi_work_space_resource_id
+output "data_factory_linked_service_azure_databricks_msi_work_space_resource_id" {
+  description = "Map of msi_work_space_resource_id values across all data_factory_linked_service_azure_databricks, keyed the same as var.data_factory_linked_service_azure_databricks"
+  value       = module.data_factory_linked_service_azure_databricks.data_factory_linked_service_azure_databricks_msi_work_space_resource_id
 }
 
-output "data_factory_linked_service_azure_databrickses_msi_workspace_id" {
-  description = "Map of msi_workspace_id values across all data_factory_linked_service_azure_databrickses, keyed the same as var.data_factory_linked_service_azure_databrickses"
-  value       = module.data_factory_linked_service_azure_databrickses.data_factory_linked_service_azure_databrickses_msi_workspace_id
+output "data_factory_linked_service_azure_databricks_msi_workspace_id" {
+  description = "Map of msi_workspace_id values across all data_factory_linked_service_azure_databricks, keyed the same as var.data_factory_linked_service_azure_databricks"
+  value       = module.data_factory_linked_service_azure_databricks.data_factory_linked_service_azure_databricks_msi_workspace_id
 }
 
-output "data_factory_linked_service_azure_databrickses_name" {
-  description = "Map of name values across all data_factory_linked_service_azure_databrickses, keyed the same as var.data_factory_linked_service_azure_databrickses"
-  value       = module.data_factory_linked_service_azure_databrickses.data_factory_linked_service_azure_databrickses_name
+output "data_factory_linked_service_azure_databricks_name" {
+  description = "Map of name values across all data_factory_linked_service_azure_databricks, keyed the same as var.data_factory_linked_service_azure_databricks"
+  value       = module.data_factory_linked_service_azure_databricks.data_factory_linked_service_azure_databricks_name
 }
 
-output "data_factory_linked_service_azure_databrickses_new_cluster_config" {
-  description = "Map of new_cluster_config values across all data_factory_linked_service_azure_databrickses, keyed the same as var.data_factory_linked_service_azure_databrickses"
-  value       = module.data_factory_linked_service_azure_databrickses.data_factory_linked_service_azure_databrickses_new_cluster_config
+output "data_factory_linked_service_azure_databricks_new_cluster_config" {
+  description = "Map of new_cluster_config values across all data_factory_linked_service_azure_databricks, keyed the same as var.data_factory_linked_service_azure_databricks"
+  value       = module.data_factory_linked_service_azure_databricks.data_factory_linked_service_azure_databricks_new_cluster_config
 }
 
-output "data_factory_linked_service_azure_databrickses_parameters" {
-  description = "Map of parameters values across all data_factory_linked_service_azure_databrickses, keyed the same as var.data_factory_linked_service_azure_databrickses"
-  value       = module.data_factory_linked_service_azure_databrickses.data_factory_linked_service_azure_databrickses_parameters
+output "data_factory_linked_service_azure_databricks_parameters" {
+  description = "Map of parameters values across all data_factory_linked_service_azure_databricks, keyed the same as var.data_factory_linked_service_azure_databricks"
+  value       = module.data_factory_linked_service_azure_databricks.data_factory_linked_service_azure_databricks_parameters
 }
 
 # --- azurerm_data_factory_linked_service_azure_file_storage ---
@@ -2252,55 +2252,55 @@ output "data_factory_linked_service_mysqls_parameters" {
 }
 
 # --- azurerm_data_factory_linked_service_odata ---
-output "data_factory_linked_service_odatas_id" {
-  description = "Map of id values across all data_factory_linked_service_odatas, keyed the same as var.data_factory_linked_service_odatas"
-  value       = module.data_factory_linked_service_odatas.data_factory_linked_service_odatas_id
+output "data_factory_linked_service_odata_id" {
+  description = "Map of id values across all data_factory_linked_service_odata, keyed the same as var.data_factory_linked_service_odata"
+  value       = module.data_factory_linked_service_odata.data_factory_linked_service_odata_id
 }
 
-output "data_factory_linked_service_odatas_additional_properties" {
-  description = "Map of additional_properties values across all data_factory_linked_service_odatas, keyed the same as var.data_factory_linked_service_odatas"
-  value       = module.data_factory_linked_service_odatas.data_factory_linked_service_odatas_additional_properties
+output "data_factory_linked_service_odata_additional_properties" {
+  description = "Map of additional_properties values across all data_factory_linked_service_odata, keyed the same as var.data_factory_linked_service_odata"
+  value       = module.data_factory_linked_service_odata.data_factory_linked_service_odata_additional_properties
 }
 
-output "data_factory_linked_service_odatas_annotations" {
-  description = "Map of annotations values across all data_factory_linked_service_odatas, keyed the same as var.data_factory_linked_service_odatas"
-  value       = module.data_factory_linked_service_odatas.data_factory_linked_service_odatas_annotations
+output "data_factory_linked_service_odata_annotations" {
+  description = "Map of annotations values across all data_factory_linked_service_odata, keyed the same as var.data_factory_linked_service_odata"
+  value       = module.data_factory_linked_service_odata.data_factory_linked_service_odata_annotations
 }
 
-output "data_factory_linked_service_odatas_basic_authentication" {
-  description = "Map of basic_authentication values across all data_factory_linked_service_odatas, keyed the same as var.data_factory_linked_service_odatas"
-  value       = module.data_factory_linked_service_odatas.data_factory_linked_service_odatas_basic_authentication
+output "data_factory_linked_service_odata_basic_authentication" {
+  description = "Map of basic_authentication values across all data_factory_linked_service_odata, keyed the same as var.data_factory_linked_service_odata"
+  value       = module.data_factory_linked_service_odata.data_factory_linked_service_odata_basic_authentication
   sensitive   = true
 }
 
-output "data_factory_linked_service_odatas_data_factory_id" {
-  description = "Map of data_factory_id values across all data_factory_linked_service_odatas, keyed the same as var.data_factory_linked_service_odatas"
-  value       = module.data_factory_linked_service_odatas.data_factory_linked_service_odatas_data_factory_id
+output "data_factory_linked_service_odata_data_factory_id" {
+  description = "Map of data_factory_id values across all data_factory_linked_service_odata, keyed the same as var.data_factory_linked_service_odata"
+  value       = module.data_factory_linked_service_odata.data_factory_linked_service_odata_data_factory_id
 }
 
-output "data_factory_linked_service_odatas_description" {
-  description = "Map of description values across all data_factory_linked_service_odatas, keyed the same as var.data_factory_linked_service_odatas"
-  value       = module.data_factory_linked_service_odatas.data_factory_linked_service_odatas_description
+output "data_factory_linked_service_odata_description" {
+  description = "Map of description values across all data_factory_linked_service_odata, keyed the same as var.data_factory_linked_service_odata"
+  value       = module.data_factory_linked_service_odata.data_factory_linked_service_odata_description
 }
 
-output "data_factory_linked_service_odatas_integration_runtime_name" {
-  description = "Map of integration_runtime_name values across all data_factory_linked_service_odatas, keyed the same as var.data_factory_linked_service_odatas"
-  value       = module.data_factory_linked_service_odatas.data_factory_linked_service_odatas_integration_runtime_name
+output "data_factory_linked_service_odata_integration_runtime_name" {
+  description = "Map of integration_runtime_name values across all data_factory_linked_service_odata, keyed the same as var.data_factory_linked_service_odata"
+  value       = module.data_factory_linked_service_odata.data_factory_linked_service_odata_integration_runtime_name
 }
 
-output "data_factory_linked_service_odatas_name" {
-  description = "Map of name values across all data_factory_linked_service_odatas, keyed the same as var.data_factory_linked_service_odatas"
-  value       = module.data_factory_linked_service_odatas.data_factory_linked_service_odatas_name
+output "data_factory_linked_service_odata_name" {
+  description = "Map of name values across all data_factory_linked_service_odata, keyed the same as var.data_factory_linked_service_odata"
+  value       = module.data_factory_linked_service_odata.data_factory_linked_service_odata_name
 }
 
-output "data_factory_linked_service_odatas_parameters" {
-  description = "Map of parameters values across all data_factory_linked_service_odatas, keyed the same as var.data_factory_linked_service_odatas"
-  value       = module.data_factory_linked_service_odatas.data_factory_linked_service_odatas_parameters
+output "data_factory_linked_service_odata_parameters" {
+  description = "Map of parameters values across all data_factory_linked_service_odata, keyed the same as var.data_factory_linked_service_odata"
+  value       = module.data_factory_linked_service_odata.data_factory_linked_service_odata_parameters
 }
 
-output "data_factory_linked_service_odatas_url" {
-  description = "Map of url values across all data_factory_linked_service_odatas, keyed the same as var.data_factory_linked_service_odatas"
-  value       = module.data_factory_linked_service_odatas.data_factory_linked_service_odatas_url
+output "data_factory_linked_service_odata_url" {
+  description = "Map of url values across all data_factory_linked_service_odata, keyed the same as var.data_factory_linked_service_odata"
+  value       = module.data_factory_linked_service_odata.data_factory_linked_service_odata_url
 }
 
 # --- azurerm_data_factory_linked_service_odbc ---
