@@ -1431,11 +1431,6 @@ output "data_factory_linked_service_azure_blob_storages_integration_runtime_name
   value       = module.data_factory_linked_service_azure_blob_storages.data_factory_linked_service_azure_blob_storages_integration_runtime_name
 }
 
-output "data_factory_linked_service_azure_blob_storages_key_vault_sas_token" {
-  description = "Map of key_vault_sas_token values across all data_factory_linked_service_azure_blob_storages, keyed the same as var.data_factory_linked_service_azure_blob_storages"
-  value       = module.data_factory_linked_service_azure_blob_storages.data_factory_linked_service_azure_blob_storages_key_vault_sas_token
-}
-
 output "data_factory_linked_service_azure_blob_storages_name" {
   description = "Map of name values across all data_factory_linked_service_azure_blob_storages, keyed the same as var.data_factory_linked_service_azure_blob_storages"
   value       = module.data_factory_linked_service_azure_blob_storages.data_factory_linked_service_azure_blob_storages_name
@@ -1548,11 +1543,6 @@ output "data_factory_linked_service_azure_databricks_integration_runtime_name" {
 output "data_factory_linked_service_azure_databricks_key_vault_password" {
   description = "Map of key_vault_password values across all data_factory_linked_service_azure_databricks, keyed the same as var.data_factory_linked_service_azure_databricks"
   value       = module.data_factory_linked_service_azure_databricks.data_factory_linked_service_azure_databricks_key_vault_password
-}
-
-output "data_factory_linked_service_azure_databricks_msi_work_space_resource_id" {
-  description = "Map of msi_work_space_resource_id values across all data_factory_linked_service_azure_databricks, keyed the same as var.data_factory_linked_service_azure_databricks"
-  value       = module.data_factory_linked_service_azure_databricks.data_factory_linked_service_azure_databricks_msi_work_space_resource_id
 }
 
 output "data_factory_linked_service_azure_databricks_msi_workspace_id" {
@@ -2870,9 +2860,9 @@ output "data_factory_pipelines_folder" {
   value       = module.data_factory_pipelines.data_factory_pipelines_folder
 }
 
-output "data_factory_pipelines_moniter_metrics_after_duration" {
-  description = "Map of moniter_metrics_after_duration values across all data_factory_pipelines, keyed the same as var.data_factory_pipelines"
-  value       = module.data_factory_pipelines.data_factory_pipelines_moniter_metrics_after_duration
+output "data_factory_pipelines_monitor_metrics_after_duration" {
+  description = "Map of monitor_metrics_after_duration values across all data_factory_pipelines, keyed the same as var.data_factory_pipelines"
+  value       = module.data_factory_pipelines.data_factory_pipelines_monitor_metrics_after_duration
 }
 
 output "data_factory_pipelines_name" {

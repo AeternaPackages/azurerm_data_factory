@@ -319,7 +319,6 @@ Nested data_factory_linked_service_azure_blob_storages (azurerm_data_factory_lin
         - storage_kind
         - tenant_id
         - use_managed_identity
-        - key_vault_sas_token (block)
         - sas_token_linked_key_vault_key (block)
         - service_principal_linked_key_vault_key (block)
 Nested data_factory_linked_service_azure_databricks (azurerm_data_factory_linked_service_azure_databricks):
@@ -335,7 +334,6 @@ Nested data_factory_linked_service_azure_databricks (azurerm_data_factory_linked
         - description
         - existing_cluster_id
         - integration_runtime_name
-        - msi_work_space_resource_id
         - msi_workspace_id
         - parameters
         - instance_pool (block)
@@ -646,7 +644,7 @@ Nested data_factory_pipelines (azurerm_data_factory_pipeline):
         - concurrency
         - description
         - folder
-        - moniter_metrics_after_duration
+        - monitor_metrics_after_duration
         - parameters
         - variables
 Nested data_factory_trigger_blob_events (azurerm_data_factory_trigger_blob_event):
@@ -1340,10 +1338,6 @@ EOT
       storage_kind                            = optional(string)
       tenant_id                               = optional(string)
       use_managed_identity                    = optional(bool)
-      key_vault_sas_token = optional(object({
-        linked_service_name = string
-        secret_name         = string
-      }))
       sas_token_linked_key_vault_key = optional(object({
         linked_service_name = string
         secret_name         = string
@@ -1364,7 +1358,6 @@ EOT
       description                        = optional(string)
       existing_cluster_id                = optional(string)
       integration_runtime_name           = optional(string)
-      msi_work_space_resource_id         = optional(string)
       msi_workspace_id                   = optional(string)
       parameters                         = optional(map(string))
       instance_pool = optional(object({
@@ -1717,7 +1710,7 @@ EOT
       concurrency                    = optional(number)
       description                    = optional(string)
       folder                         = optional(string)
-      moniter_metrics_after_duration = optional(string)
+      monitor_metrics_after_duration = optional(string)
       parameters                     = optional(map(string))
       variables                      = optional(map(string))
     })))
